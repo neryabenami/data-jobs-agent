@@ -250,5 +250,110 @@
   "company": "",
   "via": "https://careers.smartrecruiters.com/TLVTech",
   "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "playtikaltd",
+  "company": "",
+  "via": "https://www.playtika.com/position/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "73.00E|37E11766FC1F6E11761F6E6FC01BF06FC",
+  "company": "",
+  "via": "https://www.rapyd.net/company/careers-search/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "41.009|14952452466D3DB7B61495240B91",
+  "company": "",
+  "via": "https://www.etoro.com/about/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "placerlabs",
+  "company": "",
+  "via": "https://www.placer.ai/company/we-are-hiring",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "04.002|402140A1008140A180C1008402C06804C06",
+  "company": "",
+  "via": "https://www.viber.com/en/careers-israel/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://unitytech.wd1.myworkdayjobs.com/Unity",
+  "company": "",
+  "via": "https://unity.com/careers/positions",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "91.001|191644966966644E194B3191644644",
+  "company": "",
+  "via": "https://www.aquasec.com/about-us/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "pagaya",
+  "company": "",
+  "via": "https://pagaya.com/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "pagayais",
+  "company": "",
+  "via": "https://pagaya.com/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/earnix/93.00B",
+  "company": "",
+  "via": "https://earnix.com/our-story/careers/israel/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/minute/45.00A",
+  "company": "",
+  "via": "https://www.minutemedia.com/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "45.00A|54A1A7225062A50FDE2F9A1FBC01FBC1528",
+  "company": "",
+  "via": "https://www.minutemedia.com/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "khealthcareers",
+  "company": "",
+  "via": "https://khealth.com/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "aidocmedical",
+  "company": "",
+  "via": "https://www.aidoc.com/about/careers/",
+  "found_on": "2026-09-25"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/healthy/B4.004",
+  "company": "",
+  "via": "https://healthy.io/careers/",
+  "found_on": "2026-09-25"
  }
 ]
