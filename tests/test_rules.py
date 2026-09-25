@@ -240,6 +240,31 @@ class UserLinks(unittest.TestCase):
                 C.USER_SOURCES_DIR = old
         self.assertEqual(links, ["https://a.com/careers", "https://b.co.il/jobs", "https://jobs.lever.co/x?utm_source=1"])
 
+    def test_same_site_different_path_scanned_once(self):
+        with tempfile.TemporaryDirectory() as d:
+            old = C.USER_SOURCES_DIR
+            C.USER_SOURCES_DIR = d
+            try:
+                with open(os.path.join(d, "a.txt"), "w", encoding="utf-8") as f:
+                    f.write("https://www.max.co.il/jobs/lobby\n")
+                with open(os.path.join(d, "b.txt"), "w", encoding="utf-8") as f:
+                    f.write("1. https://max.co.il/careers\n"
+                            "https://www.comeet.com/jobs/a/11.111\nhttps://www.comeet.com/jobs/b/22.222\n")
+                links = pipeline.read_user_links()
+            finally:
+                C.USER_SOURCES_DIR = old
+        self.assertEqual(links, ["https://www.max.co.il/jobs/lobby", "https://www.comeet.com/jobs/a/11.111",
+                                 "https://www.comeet.com/jobs/b/22.222"])
+
+    def test_email_body_has_summary_but_no_job_list(self):
+        from agent import mailer
+        j, _, _ = pipeline.evaluate(raw(title="Unique Data Analyst Title"), NOW)
+        body = mailer.body_html("25/09/2026", [j], [j], [SourceStatus("https://a.com", "A", "m")], 0)
+        self.assertIn("משרות חדשות:</b> 1", body)
+        self.assertIn("קישורים שנסרקו:</b> 1", body)
+        self.assertNotIn("Unique Data Analyst Title", body)
+        self.assertNotIn("<table", body)
+
 
 class Timing(unittest.TestCase):
     def test_send_time_is_10_israel_in_summer_and_winter(self):

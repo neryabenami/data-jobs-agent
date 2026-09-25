@@ -30,14 +30,7 @@ def body_html(day, new_jobs, cumulative, statuses, removed):
     ok = sum(1 for s in statuses if s.status == "הצלחה")
     partial = sum(1 for s in statuses if s.status == "חלקי")
     failed = len(statuses) - ok - partial
-    rows = "".join(
-        f"<tr><td>{html.escape(j.title)}</td><td>{html.escape(j.company)}</td><td>{html.escape(j.location)}</td>"
-        f"<td>{html.escape(j.date_display)}</td><td><a href=\"{html.escape(j.url)}\">קישור</a></td></tr>"
-        for j in new_jobs[:40])
-    table = (f"<table border='1' cellpadding='5' style='border-collapse:collapse;font-size:13px'>"
-             f"<tr style='background:#1F4E78;color:#fff'><th>תפקיד</th><th>חברה</th><th>מיקום</th><th>תאריך</th>"
-             f"<th>קישור</th></tr>{rows}</table>") if new_jobs else "<p>לא נמצאו משרות חדשות היום.</p>"
-    more = f"<p>ועוד {len(new_jobs) - 40} משרות בקובץ המצורף.</p>" if len(new_jobs) > 40 else ""
+    # summary only - the jobs themselves are in the attached Excel file
     return f"""<div dir="rtl" style="font-family:Arial,sans-serif">
 <h2>דוח משרות Data Analytics - {day}</h2>
 <ul>
@@ -45,8 +38,7 @@ def body_html(day, new_jobs, cumulative, statuses, removed):
 <li><b>ברשימה המצטברת:</b> {len(cumulative)} (הוסרו {removed} משרות ישנות מ-20 ימים)</li>
 <li><b>קישורים שנסרקו:</b> {len(statuses)} (הצלחה {ok}, חלקי {partial}, נכשל/לא נגיש {failed})</li>
 </ul>
-{table}{more}
-<p style="color:#666;font-size:12px">הדוח המלא (4 לשוניות) מצורף כקובץ Excel.</p>
+<p>כל המשרות מופיעות בקובץ ה-Excel המצורף (4 לשוניות).</p>
 </div>"""
 
 

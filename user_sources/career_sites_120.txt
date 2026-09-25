@@ -1,0 +1,127 @@
+# אתרי קריירה של חברות מובילות (נוספו 25/09/2026)
+
+https://careers.microsoft.com/v2/global/en/locations/israel.html
+https://www.amazon.jobs/content/en/locations/israel/tel-aviv
+https://jobs.nvidia.com/careers
+https://www.salesforce.com/company/careers/locations/emea/israel/
+https://jobs.sap.com/go/Israel/8807501/
+https://www.oracle.com/il/careers/
+https://jobs.cisco.com/jobs/SearchJobs/Israel%20?listFilterMode=1
+https://www.ibm.com/careers/search
+https://www.playtika.com/position/
+https://www.rapyd.net/company/careers-search/
+https://www.etoro.com/about/careers/
+https://tipalti.com/company/careers/
+https://www.papayaglobal.com/careers/
+https://www.gett.com/careers/
+https://careers.mobileye.com/
+https://www.cyberark.com/careers/
+https://www.catonetworks.com/careers/
+https://redis.io/company/careers/
+https://careers.solaredge.com/
+https://www.audiocodes.com/careers
+https://company.plarium.com/en/career/
+https://connecteam.com/careers/
+https://corporate.365scores.com/careers/
+https://www.placer.ai/company/we-are-hiring
+https://www.viber.com/en/careers-israel/
+https://unity.com/careers/positions
+https://www.bankhapoalim.co.il/he/about/career
+https://www.leumi.co.il/he/Articles/38822
+https://www.discountbank.co.il/DB/private/about-discount/career/
+https://www.mizrahi-tefahot.co.il/about-mizrahi-tefahot-he/career/
+https://www.fibi.co.il/private/general/about/career/
+https://marketing.isracard.co.il/careershome/
+https://www.harel-group.co.il/careers
+https://my.migdal.co.il/career_migdal
+https://www.clalbit.co.il/careers/
+https://www.menoramivt.co.il/job-posting/open-position
+https://www.one1.co.il/careers/
+https://www.sqlink.com/career/
+https://www.ness-tech.co.il/joinus
+https://ey.co.il/career/
+https://careers.deloitte.co.il/positions/
+https://www.teva.co.il/career
+https://jobs.keshet-mediagroup.com/
+https://snyk.io/careers/
+https://www.sentinelone.com/jobs/
+https://www.imperva.com/company/careers/
+https://claroty.com/careers
+https://www.aquasec.com/about-us/careers/
+https://www.bigpanda.io/careers/
+https://coralogix.com/careers/
+https://www.bringg.com/careers
+https://www.guesty.com/careers/
+https://www.nextinsurance.com/careers/
+https://pagaya.com/careers/
+https://fundbox.com/careers/
+https://www.bluevine.com/careers
+https://earnix.com/our-story/careers/israel/
+https://corp.kaltura.com/company/careers/
+https://brightdata.com/careers
+https://www.lusha.com/careers/
+https://www.hibob.com/careers/
+https://www.artlistjobs.io/
+https://www.minutemedia.com/careers/
+https://khealth.com/careers/
+https://www.aidoc.com/about/careers/
+https://healthy.io/careers/
+https://www.verint.com/careers/
+https://www.elbitsystems.com/careers
+https://jobs.iai.co.il/
+https://career.rafael.co.il/
+https://careers.icl-group.com/?locale=he_IL
+https://www.zim.com/careers
+https://www.strauss-group.com/careers/
+https://www.cellcom.co.il/career/
+https://www.partner.co.il/globalassets/global/drushimsersupport/index.html
+https://www.bezeq.co.il/aboutus/jobs/
+https://www.hot.net.il/heb/careersearch/
+https://www.tnuva.co.il/career/
+
+# ---- לא נסרקים מקובץ זה כדי למנוע כפילות ----
+# אתרים שכבר קיימים בקובץ career_sites2.txt:
+# https://www.google.com/about/careers/applications/jobs/results/?location=Israel
+# https://jobs.apple.com/en-il/search?location=israel-ISR
+# https://www.metacareers.com/jobs/
+# https://jobs.intel.com/
+# https://careers.wix.com/positions
+# https://monday.com/careers
+# https://careers.appsflyer.com/
+# https://www.taboola.com/careers
+# https://www.fiverr.com/jobs
+# https://www.moonactive.com/careers/
+# https://careers.checkpoint.com/
+# https://jobs.paloaltonetworks.com/en/israel
+# https://elementor.careers/explore/
+# https://www.max.co.il/careers
+# https://www.cal-online.co.il/about/career/
+# https://www.fnx.co.il/career/open-positions/
+# https://www.matrix.co.il/jobs/
+# https://www.aman.co.il/careers/all/
+# https://orca.security/about/careers/
+# https://www.naturalint.com/?pagename=jobs
+# https://www.global-e.com/careers/
+# https://jobs.amdocs.com/
+
+# חברות שהמשרות שלהן כבר נסרקות ישירות ממערכת הגיוס (Greenhouse / Lever / Ashby / SmartRecruiters):
+# https://www.similarweb.com/corp/careers/   (כבר נסרק: similarweb)
+# https://www.melio.com/careers   (כבר נסרק: melio)
+# https://www.honeybook.com/company/careers   (כבר נסרק: honeybook)
+# https://careers.payoneer.com/israel   (כבר נסרק: payoneer)
+# https://www.riskified.com/careers/   (כבר נסרק: riskified)
+# https://ridewithvia.com/careers   (כבר נסרק: via)
+# https://www.armis.com/armis-careers/   (כבר נסרק: armis)
+# https://www.forter.com/job-opportunities/   (כבר נסרק: forter)
+# https://www.gong.io/careers   (כבר נסרק: gongio)
+# https://www.walkme.com/careers/   (כבר נסרק: walkme)
+# https://careers.lightricks.com/   (כבר נסרק: lightricks)
+# https://join.jfrog.com/   (כבר נסרק: jfrog)
+# https://www.wiz.io/careers   (כבר נסרק: wizinc)
+# https://www.island.io/careers   (כבר נסרק: island)
+# https://www.datarails.com/careers/   (כבר נסרק: datarails)
+# https://www.sisense.com/about/careers/   (כבר נסרק: sisense)
+# https://www.yotpo.com/careers/   (כבר נסרק: yotpo)
+# https://makers.lemonade.com/   (כבר נסרק: lemonade)
+# https://www.optimove.com/careers   (כבר נסרק: optimove)
+# https://www.nice.com/careers/apply   (כבר נסרק: nice)

@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+from urllib.parse import urlparse
 from collections import Counter
 
 from . import config as C
@@ -31,13 +32,20 @@ def read_user_links():
                     links.append(m.rstrip(".,);]"))
                 if not URL_RE.search(line) and re.match(r"^[\w.-]+\.[a-z]{2,}(/\S*)?$", line, re.I):
                     links.append("https://" + line)
+    # one link per site, so the same careers site listed twice (even with a different path) is scanned once.
+    # Shared recruiting platforms host many companies on one domain - there the full URL is the identity.
     seen, out = set(), []
     for u in links:
-        k = canonical_url(u)
+        host = re.sub(r"^www\.", "", urlparse(u).netloc.lower())
+        k = canonical_url(u) if SHARED_HOSTS_RE.search(host) else host
         if k not in seen:
             seen.add(k)
             out.append(u)
     return out
+
+
+SHARED_HOSTS_RE = re.compile(r"comeet\.com|comeet\.co|greenhouse\.io|lever\.co|ashbyhq\.com|workable\.com|"
+                             r"smartrecruiters\.com|myworkdayjobs\.com|jobvite\.com|zohorecruit\.com|pinpointhq\.com")
 
 
 # ----------------------------------------------------------------------------- scanning
