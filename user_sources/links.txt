@@ -1,0 +1,8 @@
+# Add links to career sites / job boards / job pages here - one per line.
+# Blank lines and lines starting with # are ignored. Duplicates are removed automatically.
+# You can also upload any other .txt file into this folder - all of them are read.
+#
+# Examples:
+# https://www.comeet.com/jobs/COMPANY/XX.XXX
+# https://job-boards.greenhouse.io/COMPANY
+# https://www.company.co.il/careers
