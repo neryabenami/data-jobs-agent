@@ -276,5 +276,102 @@ class Timing(unittest.TestCase):
         self.assertEqual((summer.hour, winter.hour), (10, 10))
 
 
+class CompanyTypeColumn(unittest.TestCase):
+    """The agreed "סוג חברה" column: classification, row order, position and frozen columns."""
+
+    def test_classify_by_name(self):
+        from agent import company_type as CT
+        cases = {"Similarweb": CT.HITECH, "Palo Alto Networks": CT.HITECH, "בנק לאומי": CT.BANKS,
+                 "Bank Hapoalim בנק הפועלים": CT.BANKS, "הראל ביטוח ופיננסים": CT.FINANCE,
+                 "Cal (Israel Credit Cards)": CT.FINANCE, "EY": CT.CONSULTING, "G-STAT": CT.CONSULTING,
+                 "Novo Nordisk": CT.HEALTH, "קופת חולים לאומית": CT.HEALTH, "Keshet Media Group": CT.MEDIA,
+                 "פלאפון": CT.MEDIA, "אסם": CT.RETAIL, "Kimberly-Clark": CT.RETAIL, "Thales": CT.INDUSTRY,
+                 "Enlight Renewable Energy Ltd (ENLT)": CT.INDUSTRY, "קבוצת ארקיע": CT.OTHER,
+                 "החברה המאוחדת לתיירות בעמ": CT.OTHER}
+        for company, expected in cases.items():
+            self.assertEqual(CT.classify(company)[0], expected, company)
+
+    def test_hidden_and_agencies(self):
+        from agent import company_type as CT
+        for company in ["חסוי", "- חסוי -", "Confidential- Discreet", "לא צוין במקור",
+                        "חברה בתחום הייטק / חומרה / תוכנה / סייבר", "Experis Academy", "לין ביכלר",
+                        "יערה פיינר אבחון והשמה בע\"מ", "Recruitx", ""]:
+            self.assertEqual(CT.classify(company)[0], CT.AGENCY, company)
+
+    def test_other_signals_when_name_is_unknown(self):
+        from agent import company_type as CT
+        self.assertEqual(CT.classify("Zorblax", industry="Software Development")[0], CT.HITECH)
+        self.assertEqual(CT.classify("Zorblax", industry="Banking")[0], CT.BANKS)
+        self.assertEqual(CT.classify("Zorblax", industry="Staffing and Recruiting")[0], CT.AGENCY)
+        self.assertEqual(CT.classify("Zorblax", industry="Hospitals and Health Care")[0], CT.HEALTH)
+        self.assertEqual(CT.classify("Zorblax", industry="Hospitality")[0], CT.OTHER)
+        self.assertEqual(CT.classify("Zorblax", listing_url="https://job-boards.greenhouse.io/zorblax")[0], CT.HITECH)
+        self.assertEqual(CT.classify("Zorblax", description="A fast growing startup building a SaaS product")[0],
+                         CT.HITECH)
+        self.assertEqual(CT.classify("Zorblax", description="We sell furniture")[0], CT.OTHER)
+
+    def test_one_type_per_company(self):
+        from agent import company_type as CT
+        a = raw(title="Data Analyst", url="https://x.com/1")
+        b = raw(title="BI Analyst", url="https://x.com/2")
+        a.company = b.company = "Zorblax"
+        a.industry = "Banking"
+        ja, _, _ = pipeline.evaluate(a, NOW)
+        jb, _, _ = pipeline.evaluate(b, NOW)
+        types = CT.company_map([(ja, a), (jb, b)], pipeline._company_key)
+        self.assertEqual(types, {pipeline._company_key("Zorblax"): CT.BANKS})
+
+    def test_rows_sorted_by_agreed_order_newest_first_inside(self):
+        from agent import company_type as CT
+
+        def job(company, ctype, d):
+            j, _, _ = pipeline.evaluate(raw(title="Data Analyst " + company, posted=d,
+                                            url=f"https://x.com/{company}"), NOW)
+            j.company = company
+            j.company_type = ctype
+            return j
+        jobs = [job("r", CT.RETAIL, "2026-09-23"), job("a", CT.AGENCY, "2026-09-23"), job("h1", CT.HITECH, "2026-09-10"),
+                job("b", CT.BANKS, "2026-09-22"), job("h2", CT.HITECH, "2026-09-22"), job("o", CT.OTHER, "2026-09-23")]
+        jobs.sort(key=lambda j: j.date_iso, reverse=True)
+        out = CT.sort_jobs(jobs)
+        self.assertEqual([j.company for j in out], ["h2", "h1", "b", "r", "o", "a"])
+
+    def test_cumulative_gets_types_and_order(self):
+        from agent import company_type as CT
+        state = {"jobs": []}
+        bank = raw(title="Data Analyst", url="https://x.com/bank")
+        bank.company = "בנק לאומי"
+        tech = raw(title="Data Analyst", url="https://x.com/tech", posted="2026-09-10")
+        tech.company = "Similarweb"
+        jobs = [pipeline.evaluate(r, NOW)[0] for r in (bank, tech)]
+        types = CT.company_map(list(zip(jobs, (bank, tech))), pipeline._company_key)
+        for j in jobs:
+            j.company_type = types[pipeline._company_key(j.company)]
+        new, cum, _ = pipeline.update_cumulative(state, jobs, [], NOW, types)
+        self.assertEqual([j.company_type for j in new], [CT.HITECH, CT.BANKS])  # tech first despite older date
+        # an old saved job without a type (saved before this column existed) is classified by name
+        old = {k: v for k, v in cum[1].to_dict().items() if k != "company_type"}
+        _, cum2, _ = pipeline.update_cumulative({"jobs": [old]}, [], [], NOW)
+        self.assertEqual(cum2[0].company_type, CT.BANKS)
+
+    def test_excel_column_after_role_and_frozen_panes(self):
+        from agent import company_type as CT
+        from openpyxl import load_workbook
+        j, _, _ = pipeline.evaluate(raw(), NOW)
+        j.company_type = CT.HITECH
+        with tempfile.TemporaryDirectory() as d:
+            p = excel.build(os.path.join(d, "r.xlsx"), [j], [j], [SourceStatus("https://a.com", "A", "m")])
+            wb = load_workbook(p)
+            for name in ("משרות חדשות", "רשימה מצטברת"):
+                ws = wb[name]
+                header = [c.value for c in ws[1]]
+                self.assertEqual(header[:3], ["תפקיד", "סוג חברה", "חברה"])
+                self.assertEqual(len(header), 9)
+                self.assertEqual(ws["B2"].value, CT.HITECH)
+                self.assertEqual(ws.freeze_panes, "C2")
+                self.assertEqual(ws.cell(row=2, column=8).hyperlink.target, j.url)
+            self.assertEqual(wb["מצב המקורות"].freeze_panes, "A2")  # source tabs unchanged
+
+
 if __name__ == "__main__":
     unittest.main()

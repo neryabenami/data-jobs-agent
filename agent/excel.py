@@ -6,8 +6,10 @@ from openpyxl.styles import Alignment, Font, PatternFill, Border, Side
 from openpyxl.utils import get_column_letter
 
 SHEETS = ["משרות חדשות", "רשימה מצטברת", "מצב המקורות", "מקורות ייחודיים"]
-JOB_HEADERS = ["תפקיד", "חברה", "מקור", "מיקום", "ניסיון", "סיבה להתאמה", "קישור ישיר למשרה", "תאריך פרסום המשרה"]
-JOB_WIDTHS = [38, 24, 18, 24, 22, 60, 55, 22]
+JOB_HEADERS = ["תפקיד", "סוג חברה", "חברה", "מקור", "מיקום", "ניסיון", "סיבה להתאמה", "קישור ישיר למשרה",
+               "תאריך פרסום המשרה"]
+JOB_WIDTHS = [38, 20, 24, 18, 24, 22, 60, 55, 22]
+LINK_COL = JOB_HEADERS.index("קישור ישיר למשרה") + 1
 SOURCE_HEADERS = ["מקור / קישור שנסרק", "אתר", "שיטת איסוף", "סטטוס", "תיאור שגיאה",
                   "מספר משרות רלוונטיות שחולצו"]
 SOURCE_WIDTHS = [70, 26, 40, 12, 50, 16]
@@ -20,7 +22,7 @@ STATUS_FILL = {"הצלחה": "E2EFDA", "חלקי": "FFF2CC", "נכשל": "F8CBAD
 THIN = Border(bottom=Side(style="thin", color="D9D9D9"))
 
 
-def _sheet(ws, headers, widths):
+def _sheet(ws, headers, widths, freeze="A2"):
     ws.sheet_view.rightToLeft = True
     ws.append(headers)
     for i, w in enumerate(widths, 1):
@@ -28,24 +30,26 @@ def _sheet(ws, headers, widths):
         c = ws.cell(row=1, column=i)
         c.fill, c.font = HEADER_FILL, HEADER_FONT
         c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-    ws.freeze_panes = "A2"
+    ws.freeze_panes = freeze
     ws.row_dimensions[1].height = 30
 
 
 def _jobs(ws, jobs):
-    _sheet(ws, JOB_HEADERS, JOB_WIDTHS)
+    # "תפקיד" and "סוג חברה" stay in view when scrolling sideways; the header row stays when scrolling down
+    _sheet(ws, JOB_HEADERS, JOB_WIDTHS, freeze="C2")
     for j in jobs:
-        ws.append([j.title, j.company, j.source, j.location, j.experience, j.reason, j.url, j.date_display])
+        ws.append([j.title, j.company_type, j.company, j.source, j.location, j.experience, j.reason, j.url,
+                   j.date_display])
         r = ws.max_row
-        link = ws.cell(row=r, column=7)
+        link = ws.cell(row=r, column=LINK_COL)
         if j.url.startswith("http"):
             link.hyperlink, link.font = j.url, LINK_FONT
-        for col in range(1, 9):
+        for col in range(1, len(JOB_HEADERS) + 1):
             cell = ws.cell(row=r, column=col)
-            cell.alignment = Alignment(vertical="top", wrap_text=col in (1, 6))
+            cell.alignment = Alignment(vertical="top", wrap_text=col in (1, JOB_HEADERS.index("סיבה להתאמה") + 1))
             cell.border = THIN
     if ws.max_row > 1:
-        ws.auto_filter.ref = f"A1:H{ws.max_row}"
+        ws.auto_filter.ref = f"A1:{get_column_letter(len(JOB_HEADERS))}{ws.max_row}"
 
 
 def build(path, new_jobs, cumulative, statuses):

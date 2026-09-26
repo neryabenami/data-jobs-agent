@@ -66,17 +66,20 @@ def fetch_detail(http, jid):
     if not desc:
         raise FetchError("לא נמצא תיאור משרה בעמוד")
     posted = soup.select_one(".posted-time-ago__text")
-    seniority = ""
+    seniority, industry = "", ""
     for item in soup.select(".description__job-criteria-item"):
         h = item.select_one("h3")
         v = item.select_one(".description__job-criteria-text")
         if h and v and "seniority" in h.get_text().lower():
             seniority = v.get_text(strip=True)
+        if h and v and "industr" in h.get_text().lower():
+            industry = v.get_text(" ", strip=True)
     title = soup.select_one(".top-card-layout__title, h2")
     return {
         "description": desc.get_text("\n", strip=True),
         "posted_rel": posted.get_text(strip=True) if posted else "",
         "seniority": seniority if seniority and seniority.lower() != "not applicable" else "",
+        "industry": industry,
         "title": title.get_text(strip=True) if title else "",
     }
 
@@ -121,7 +124,7 @@ def scan(ctx, queries=None):
                 ctx.add(RawJob(title=c["title"] or d["title"], company=c["company"], source="LinkedIn", url=url,
                                description=d["description"], location=c["location"],
                                posted_raw=c["date"] or d["posted_rel"], job_id=c["id"],
-                               israeli_context=True, listing_url=st.url))
+                               israeli_context=True, listing_url=st.url, industry=d["industry"]))
             if len(cards) < 5:
                 break
         if detail_fail:

@@ -17,6 +17,7 @@ class RawJob:
     experience_hint: str = ""   # structured experience field from the site, if any
     israeli_context: bool = False  # found through an Israel-scoped search / Israeli site
     listing_url: str = ""       # the scanned link this job came from (for the sources tab)
+    industry: str = ""          # the company's industry as the site states it (LinkedIn "Industries")
 
 
 @dataclass
@@ -35,6 +36,7 @@ class Job:
     alt_key: str = ""
     first_seen: str = ""
     last_seen: str = ""
+    company_type: str = ""      # "סוג חברה" column (see company_type.py)
 
     def to_dict(self):
         return asdict(self)

@@ -81,7 +81,8 @@ def run(args):
     http = Http(deadline=time.time() + (deadline - now).total_seconds())
     only = set(args.only.split(",")) if args.only else None
     ctx, accepted, stale, reasons = pipeline.scan_and_evaluate(http, now, only)
-    new_jobs, cumulative, removed = pipeline.update_cumulative(state, accepted, stale, now)
+    new_jobs, cumulative, removed = pipeline.update_cumulative(state, accepted, stale, now,
+                                                               getattr(ctx, "company_types", {}))
 
     report = os.path.join(C.REPORTS_DIR, f"jobs_report_{today.isoformat()}.xlsx")
     excel.build(report, new_jobs, cumulative, ctx.statuses)

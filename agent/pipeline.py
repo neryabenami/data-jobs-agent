@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 from collections import Counter
 
 from . import config as C
-from . import dates, rules
+from . import company_type, dates, rules
 from .location import classify, title_says_abroad, ISRAEL_RE
 from .models import Job
 from .sources import ScanContext, linkedin, israeli_boards, ats, generic, discovery
@@ -199,7 +199,7 @@ def save_state(state):
     os.replace(tmp, STATE_FILE)
 
 
-def update_cumulative(state, accepted, stale, now):
+def update_cumulative(state, accepted, stale, now, company_types=None):
     """Returns (new_jobs, cumulative_jobs, removed_count). Mutates nothing in `state`."""
     today = dates.today_il(now).isoformat()
     cum = [Job.from_dict(d) for d in state["jobs"]]
@@ -237,7 +237,15 @@ def update_cumulative(state, accepted, stale, now):
         kept.append(j)
     kept.sort(key=lambda j: (j.date_iso or "0000", j.first_seen), reverse=True)
     new_jobs.sort(key=lambda j: (j.date_iso or "0000"), reverse=True)
-    return new_jobs, kept, removed
+    # company type: this run's decision for the company wins; older jobs without one are classified by name
+    company_types = company_types or {}
+    for j in kept:
+        k = _company_key(j.company)
+        if k in company_types:
+            j.company_type = company_types[k]
+        elif not j.company_type:
+            j.company_type = company_type.classify(j.company, url=j.url)[0]
+    return company_type.sort_jobs(new_jobs), company_type.sort_jobs(kept), removed
 
 
 def scan_and_evaluate(http, now, only=None):
@@ -245,6 +253,7 @@ def scan_and_evaluate(http, now, only=None):
     run_sources(ctx, only=only, today=dates.today_il(now).isoformat())
 
     accepted, stale, reasons = [], [], Counter()
+    typed = []  # (job, raw) pairs used to decide each company's type
     ctx.foreign_locations = Counter()  # audit trail: which location strings were treated as abroad
     seen_keys, seen_alt = set(), set()
     per_listing = Counter()
@@ -266,7 +275,12 @@ def scan_and_evaluate(http, now, only=None):
         seen_keys.add(job.key)
         seen_alt.add(job.alt_key)
         accepted.append(job)
+        typed.append((job, raw))
         per_listing[raw.listing_url] += 1
+    types = company_type.company_map(typed, _company_key)
+    for job in accepted:
+        job.company_type = types.get(_company_key(job.company), company_type.OTHER)
+    ctx.company_types = types
     for st in ctx.statuses:
         st.count = per_listing.get(st.url, 0)
         if st.notes and not st.error and st.status != "הצלחה":
