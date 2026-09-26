@@ -355,5 +355,110 @@
   "company": "",
   "via": "https://healthy.io/careers/",
   "found_on": "2026-09-25"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "wolt",
+  "company": "Wolt",
+  "via": "נמצא דרך wolt.com",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "88.000|88033003B801100198011003B808802A804400",
+  "company": "",
+  "via": "https://www.mize.tech/careers",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/voyantis/86.00B",
+  "company": "",
+  "via": "https://www.voyantis.ai/careers",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "B4.00E|4BE17B61C744BE1C7497C4BE12F817B612F8",
+  "company": "",
+  "via": "https://www.explorium.ai/careers/",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/explorium/B4.00E",
+  "company": "",
+  "via": "https://www.explorium.ai/careers/",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "nift",
+  "company": "",
+  "via": "https://job-boards.greenhouse.io/nift",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "tripledotstudios",
+  "company": "",
+  "via": "https://job-boards.greenhouse.io/tripledotstudios",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "hippo70",
+  "company": "",
+  "via": "https://www.hippo.com/careers",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "trivago",
+  "company": "",
+  "via": "https://job-boards.greenhouse.io/trivago",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "palantir",
+  "company": "",
+  "via": "https://jobs.lever.co/palantir",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://amat.wd1.myworkdayjobs.com/External",
+  "company": "",
+  "via": "https://amat.wd1.myworkdayjobs.com/External",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://kla.wd1.myworkdayjobs.com/Search",
+  "company": "",
+  "via": "https://kla.wd1.myworkdayjobs.com/Search",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://ebay.wd5.myworkdayjobs.com/apply",
+  "company": "",
+  "via": "https://ebay.wd5.myworkdayjobs.com/apply",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers",
+  "company": "",
+  "via": "https://www.dynamicyield.com/careers/",
+  "found_on": "2026-09-26"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://aristocrat.wd3.myworkdayjobs.com/AristocratExternalCareersSite",
+  "company": "",
+  "via": "https://www.productmadness.com/careers",
+  "found_on": "2026-09-26"
  }
 ]
