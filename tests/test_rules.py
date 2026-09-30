@@ -276,6 +276,47 @@ class Timing(unittest.TestCase):
         self.assertEqual((summer.hour, winter.hour), (10, 10))
 
 
+class LabeledFieldsOnGenericPages(unittest.TestCase):
+    """Generic career pages: a missing location / date is filled from labeled fields on the page."""
+    BODY = "<p>" + DA_DESC + "</p>"
+
+    def job(self, html, url="https://careers.example.com/job/1"):
+        from agent.sources import generic
+        return generic._job_from_page(url, "<html><body><h1>Data Analyst</h1>" + html + "</body></html>")
+
+    def test_value_on_next_line_like_hexion(self):
+        j = self.job("<div>Date:&nbsp;Sep 24, 2026</div><div>Location:&nbsp;</div><div>Columbus, OH, US</div>" + self.BODY)
+        self.assertEqual(j["location"], "Columbus, OH, US")
+        self.assertEqual(j["posted"], "Sep 24, 2026")
+        r = raw(desc=j["description"], loc=j["location"], posted=j["posted"], url="https://careers.example.com/job/1")
+        self.assertIsNone(pipeline.evaluate(r, NOW)[0])  # abroad -> not in the report
+
+    def test_hebrew_label_same_line_kept(self):
+        j = self.job("<div>מיקום: תל אביב</div><div>פורסם: 20/09/2026</div>" + self.BODY)
+        self.assertEqual((j["location"], j["posted"]), ("תל אביב", "20/09/2026"))
+        r = raw(desc=j["description"], loc=j["location"], posted=j["posted"])
+        self.assertIsNotNone(pipeline.evaluate(r, NOW)[0])
+
+    def test_job_type_after_separator_is_dropped(self):
+        j = self.job("<div>מיקום:</div><div>חיפה | משרה מלאה</div>" + self.BODY)
+        self.assertEqual(j["location"], "חיפה")
+        r = raw(desc=j["description"], loc=j["location"])
+        self.assertIsNone(pipeline.evaluate(r, NOW)[0])  # Haifa counts as the North -> excluded
+
+    def test_no_labels_behaves_like_before(self):
+        j = self.job(self.BODY)
+        self.assertEqual(j["location"], "")
+        r = raw(desc=j["description"], loc=j["location"], posted="", url="https://careers.example.com/job/1")
+        job = pipeline.evaluate(r, NOW)[0]
+        self.assertEqual(job.location, C.UNKNOWN)
+
+    def test_structured_location_is_not_overridden(self):
+        ld = ('<script type="application/ld+json">{"@type":"JobPosting","title":"Data Analyst","description":"'
+              + DA_DESC + '","jobLocation":{"address":{"addressLocality":"Tel Aviv","addressCountry":"IL"}}}</script>')
+        j = self.job(ld + "<div>Location: London, UK</div>")
+        self.assertIn("Tel Aviv", j["location"])
+
+
 class CompanyTypeColumn(unittest.TestCase):
     """The agreed "סוג חברה" column: classification, row order, position and frozen columns."""
 

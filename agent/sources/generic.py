@@ -5,7 +5,7 @@ from urllib.parse import urljoin, urlparse, quote_plus
 from bs4 import BeautifulSoup
 
 from .. import config as C
-from .. import rules
+from .. import dates, rules
 from ..models import RawJob
 from ..net import FetchError
 from ..textutil import find_jsonld_jobposting, html_to_text, jsonld_location, main_content_text, site_name
@@ -24,7 +24,50 @@ DATE_TEXT_RE = re.compile(r"(?:פורסם|עודכן|posted|updated|published|da
                           r"((?:לפני\s+)?[\w\s/.,\-]{2,25}?)(?:\n|$|\|)", re.I)
 
 
+LOCATION_LABEL_RE = re.compile(r"^(?:job location|work location|locations?|office location|city|"
+                               r"מיקום המשרה|מיקום|אזור|עיר)\s*[:：]\s*(.*)$", re.I)
+DATE_LABEL_RE = re.compile(r"^(?:date posted|posted on|posted date|posting date|publish(?:ed)? date|published|"
+                           r"date|posted|תאריך פרסום|תאריך|פורסם)\s*[:：]\s*(.*)$", re.I)
+
+
+def _labeled_fields(html):
+    """Location / date written on the page as labeled fields ("Location: Columbus, OH, US", "Date: Sep 24, 2026").
+
+    The value may sit on the same line or on the next non-empty line (common in career-site templates)."""
+    text = BeautifulSoup(html, "lxml").get_text("\n").replace("\xa0", " ")
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    location, posted = "", ""
+    for i, line in enumerate(lines):
+        if len(line) > 90:
+            continue
+        for rx, kind in ((LOCATION_LABEL_RE, "location"), (DATE_LABEL_RE, "date")):
+            m = rx.match(line)
+            if not m:
+                continue
+            value = m.group(1).strip() or (lines[i + 1] if i + 1 < len(lines) else "")
+            if not 2 <= len(value) <= 80:
+                continue
+            if kind == "location" and not location:
+                # "חיפה | משרה מלאה" / "כפר סבא | היברידי" -> keep the place, drop job-type details
+                location = re.split(r"\s*[|•·]\s*", value)[0].strip()
+            elif kind == "date" and not posted and dates.parse_date(value):
+                posted = value
+    return location, posted
+
+
 def _job_from_page(url, html, fallback_title="", site=""):
+    """Read the job the usual way, then fill a missing location / date from labeled fields on the page."""
+    job = _job_from_page_base(url, html, fallback_title, site)
+    if not job.get("location") or not (job.get("posted") or job.get("updated")):
+        location, posted = _labeled_fields(html)
+        if not job.get("location") and location:
+            job["location"] = location
+        if not (job.get("posted") or job.get("updated")) and posted:
+            job["posted"] = posted
+    return job
+
+
+def _job_from_page_base(url, html, fallback_title="", site=""):
     """Extract a single job from its own page. Prefers schema.org JobPosting, else main content."""
     soup = BeautifulSoup(html, "lxml")
     if "jobmaster.co.il" in urlparse(url).netloc and soup.select_one(".article__jobBody"):
