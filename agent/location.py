@@ -5,8 +5,16 @@ from . import config as C
 from .textutil import norm
 
 
+HE_KIRYAT_RE = re.compile(r"(?<![א-ת])קרית(?![א-ת])")
+
+
+def _he(s):
+    """Hebrew spelling variants of one place: "קרית אתא" (defective) = "קריית אתא" (plene)."""
+    return HE_KIRYAT_RE.sub("קריית", s or "")
+
+
 def _terms_re(terms):
-    normed = sorted({norm(t) for t in terms if norm(t)}, key=len, reverse=True)
+    normed = sorted({norm(_he(t)) for t in terms if norm(t)}, key=len, reverse=True)
     return re.compile(r"(?<!\w)(?:" + "|".join(re.escape(t) for t in normed) + r")(?!\w)")
 
 
@@ -16,6 +24,8 @@ if C.TREAT_HAIFA_AS_NORTH:
     EXCLUDED_RES["אזור הצפון / North"] = _terms_re(C.EXCLUDED_LOCATIONS["אזור הצפון / North"] + C.HAIFA_TERMS)
 FOREIGN_RE = _terms_re(C.FOREIGN_TERMS)
 US_STATE_RE = re.compile(C.FOREIGN_US_STATE_RE)
+# "Teaneck, US" / "London, GB": a two-letter country code at the end of a location (as Comeet and others send it)
+COUNTRY_CODE_RE = re.compile(r",\s*([A-Za-z]{2})\s*$")
 HEBREW_RE = re.compile(r"[א-ת]")  # a location written in Hebrew is an Israeli location
 BARE_REGION = {"צפון": "אזור הצפון / North", "הצפון": "אזור הצפון / North", "north": "אזור הצפון / North",
                "דרום": "אזור הדרום / South", "הדרום": "אזור הדרום / South", "south": "אזור הדרום / South"}
@@ -49,14 +59,16 @@ def classify(location, description="", url="", israeli_context=False):
     decision: 'israel' (show) | 'unknown' (show, needs verification) | 'excluded' | 'foreign'
     """
     loc = (location or "").strip()
-    nloc = norm(loc)
+    nloc = norm(_he(loc))
     if nloc in BARE_REGION:
         return "excluded", loc, BARE_REGION[nloc]
 
     parts = _split_locations(loc) or ([loc] if loc else [])
     allowed_il, excluded_hits, foreign_hits = [], [], []
     for p in parts:
-        np_ = norm(p)
+        np_ = norm(_he(p))
+        cc = COUNTRY_CODE_RE.search(p)
+        cc = cc.group(1).upper() if cc else ""
         if not np_ or GENERIC_LOC_RE.match(np_) or np_ in ("israel", "ישראל", "il"):
             continue
         if np_ in BARE_REGION:
@@ -65,9 +77,10 @@ def classify(location, description="", url="", israeli_context=False):
         hit = next((lbl for lbl, rx in EXCLUDED_RES.items() if rx.search(np_)), None)
         if hit and not NATIONWIDE_RE.search(np_):
             excluded_hits.append(hit)
-        elif ISRAEL_RE.search(np_) or HEBREW_RE.search(p):
+        elif ISRAEL_RE.search(np_) or HEBREW_RE.search(p) or cc == "IL":
             allowed_il.append(p)
-        elif FOREIGN_RE.search(np_) or US_STATE_RE.search(p):
+        elif FOREIGN_RE.search(np_) or US_STATE_RE.search(p) or cc:
+            # an explicit foreign place / country code wins over an Israel mention in the description
             foreign_hits.append(p)
 
     loc_says_israel = bool(ISRAEL_RE.search(nloc)) or nloc in ("il",)

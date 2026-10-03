@@ -136,6 +136,17 @@ class Stage5Location(unittest.TestCase):
                     "צפון", "דרום", "Northern District, Israel", "Southern District"]:
             self.check(loc, "excluded")
 
+    def test_country_code_abroad_beats_israel_mention(self):
+        desc = "We have offices in Tel Aviv and the US"
+        for loc in ["Teaneck, US", "Detroit, US", "London, GB"]:
+            self.check(loc, "foreign", description=desc)
+        self.check("Tel Aviv, IL", "israel")
+
+    def test_kiryat_spelled_with_one_yod(self):
+        for loc in ["קרית אתא", "קרית ביאליק", "קרית גת", "קרית שמונה"]:
+            self.check(loc, "excluded")
+        self.check("קרית אונו", "israel")
+
     def test_multi_location_with_allowed_city_kept(self):
         self.check("Tel Aviv | Jerusalem", "israel")
 
