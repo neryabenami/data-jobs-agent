@@ -1293,5 +1293,12 @@
   "company": "",
   "via": "https://www.workday.com/en-us/company/careers.html",
   "found_on": "2026-09-30"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "helloheart",
+  "company": "Hello Heart",
+  "via": "נמצא דרך LinkedIn",
+  "found_on": "2026-10-07"
  }
 ]
