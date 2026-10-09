@@ -1300,5 +1300,12 @@
   "company": "Hello Heart",
   "via": "נמצא דרך LinkedIn",
   "found_on": "2026-10-07"
+ },
+ {
+  "kind": "lever",
+  "slug": "dnb.",
+  "company": "",
+  "via": "https://revpath.dealhub.io/",
+  "found_on": "2026-10-09"
  }
 ]
