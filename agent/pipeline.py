@@ -226,7 +226,7 @@ def update_cumulative(state, accepted, stale, now, company_types=None):
     stale_keys = set()
     for k, alt, d in stale:
         ex = by_key.get(k) or by_alt.get(alt)
-        if ex and (not ex.date_iso or d.isoformat() >= ex.date_iso):
+        if ex and (d is None or not ex.date_iso or d.isoformat() >= ex.date_iso):
             stale_keys.add(ex.key)
     kept, removed = [], 0
     for j in cum:
@@ -268,6 +268,11 @@ def scan_and_evaluate(http, now, only=None):
                           location="", experience="", reason="", url=raw.url, date_display="", date_iso=None)
                 k, _ = job_keys(tmp)
                 stale.append((k, None, d))
+            elif why == "אין מילת מפתח בתיאור":
+                # e.g. its only keyword was in a privacy notice -> a job already listed is removed (no date check)
+                tmp = Job(title=raw.title, company=raw.company or "לא צוין במקור", source=raw.source,
+                          location="", experience="", reason="", url=raw.url, date_display="", date_iso=None)
+                stale.append((job_keys(tmp)[0], None, None))
             continue
         if job.key in seen_keys or job.alt_key in seen_alt:
             reasons["כפילות בהרצה"] += 1

@@ -62,10 +62,26 @@ def is_potential(title):
     return title_class(title) in ("listed", "variant", "combined", "candidate")
 
 
+# Legal / privacy notices about the applicant's own data ("...keep your personal data in our database")
+# are not part of the role - a keyword that appears only there must not qualify the job.
+PRIVACY_RE = re.compile(r"personal (?:data|information|details)|privacy (?:policy|notice|statement)|\bgdpr\b|"
+                        r"data protection|נתונים אישיים|מידע אישי|פרטים אישיים|מדיניות (?:ה)?פרטיות|הגנת (?:ה)?פרטיות|"
+                        r"קורות (?:ה)?חיים\s+(?:שלך\s+)?(?:יישמרו|ישמרו|יישמר|נשמרים|יוחזקו)", re.I)
+APPLICANT_RE = re.compile(r"recruit|applica|candida|\bcv\b|resume|résumé|consent|retain|retention|stor(?:e|ed|age)|"
+                          r"מועמד|קורות (?:ה)?חיים|הסכמ|גיוס|מאגר|יישמרו|ישמרו|נשמרים", re.I)
+SENTENCE_SPLIT_RE = re.compile(r"\n+|(?<=[.!?])\s+")
+
+
+def strip_privacy_notice(text):
+    """Drop the sentences that are a privacy / data-retention notice to applicants."""
+    parts = SENTENCE_SPLIT_RE.split(text or "")
+    return "\n".join(p for p in parts if not (PRIVACY_RE.search(p) and APPLICANT_RE.search(p)))
+
+
 def find_keywords(description):
     """Stage 3: mandatory keywords, searched case-insensitively inside the description only."""
     found = []
-    text = description or ""
+    text = strip_privacy_notice(description)
     for name, rx in KEYWORD_RES.items():
         if rx.search(text):
             found.append(name)

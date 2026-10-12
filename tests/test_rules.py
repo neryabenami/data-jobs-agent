@@ -425,5 +425,35 @@ class CompanyTypeColumn(unittest.TestCase):
             self.assertEqual(wb["מצב המקורות"].freeze_panes, "A2")  # source tabs unchanged
 
 
+class PrivacyNoticeKeywords(unittest.TestCase):
+    """A keyword that appears only in the privacy / CV-retention notice must not qualify the job (Swixx case)."""
+    FIN = ("As a Finance Analyst you will own the monthly accounting close, budgeting and forecasting, "
+           "variance analysis and management reporting in the ERP system. Strong Excel skills required.\n")
+
+    def test_keyword_only_in_privacy_notice_is_ignored(self):
+        desc = self.FIN + ("We will not keep your application after the recruitment process for a specific vacant "
+                           "position, unless you provide explicit consent to keep your personal data in our database.")
+        self.assertEqual(rules.find_keywords(desc), [])
+        job, why, _ = pipeline.evaluate(raw(title="Finance Analyst", desc=desc), NOW)
+        self.assertIsNone(job)
+        self.assertEqual(why, "אין מילת מפתח בתיאור")
+
+    def test_hebrew_privacy_notice_is_ignored(self):
+        desc = self.FIN + "קורות החיים יישמרו במאגר הגיוס של החברה ולא יועברו לצד שלישי, בכפוף למדיניות הפרטיות ובמסד נתונים שלנו."
+        self.assertEqual(rules.find_keywords(desc), [])
+
+    def test_real_requirement_still_counts(self):
+        desc = self.FIN + "Experience with SQL and large databases is an advantage. We respect your privacy."
+        self.assertIn("SQL", rules.find_keywords(desc))
+        self.assertIn("Database", rules.find_keywords(desc))
+
+    def test_listed_job_removed_when_rescan_finds_no_keyword(self):
+        job, _, _ = pipeline.evaluate(raw(), NOW)
+        _, cum, _ = pipeline.update_cumulative({"jobs": []}, [job], [], NOW)
+        state = {"jobs": [j.to_dict() for j in cum]}
+        _, cum2, removed = pipeline.update_cumulative(state, [], [(job.key, None, None)], NOW)
+        self.assertEqual((cum2, removed), ([], 1))
+
+
 if __name__ == "__main__":
     unittest.main()
