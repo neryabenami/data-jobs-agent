@@ -46,7 +46,8 @@ def _jobs(ws, jobs):
             link.hyperlink, link.font = j.url, LINK_FONT
         for col in range(1, len(JOB_HEADERS) + 1):
             cell = ws.cell(row=r, column=col)
-            cell.alignment = Alignment(vertical="top", wrap_text=col in (1, JOB_HEADERS.index("סיבה להתאמה") + 1))
+            # centered, one line per row: long text is clipped, never widens the row
+            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=False)
             cell.border = THIN
     if ws.max_row > 1:
         ws.auto_filter.ref = f"A1:{get_column_letter(len(JOB_HEADERS))}{ws.max_row}"
