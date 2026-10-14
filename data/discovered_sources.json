@@ -1370,5 +1370,12 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-10-12"
+ },
+ {
+  "kind": "lever",
+  "slug": "impossiblecloud",
+  "company": "",
+  "via": "https://revpath.dealhub.io/",
+  "found_on": "2026-10-14"
  }
 ]
