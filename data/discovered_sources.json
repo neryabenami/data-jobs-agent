@@ -1377,5 +1377,26 @@
   "company": "",
   "via": "https://revpath.dealhub.io/",
   "found_on": "2026-10-14"
+ },
+ {
+  "kind": "ashby",
+  "slug": "filigran",
+  "company": "Filigran",
+  "via": "נמצא דרך LinkedIn",
+  "found_on": "2026-10-15"
+ },
+ {
+  "kind": "workable",
+  "slug": "nuvei",
+  "company": "Nuvei",
+  "via": "נמצא דרך LinkedIn",
+  "found_on": "2026-10-15"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/duve/58.00D",
+  "company": "",
+  "via": "https://duve.com/career/",
+  "found_on": "2026-10-15"
  }
 ]
