@@ -268,8 +268,9 @@ def scan_and_evaluate(http, now, only=None):
                           location="", experience="", reason="", url=raw.url, date_display="", date_iso=None)
                 k, _ = job_keys(tmp)
                 stale.append((k, None, d))
-            elif why == "אין מילת מפתח בתיאור":
-                # e.g. its only keyword was in a privacy notice -> a job already listed is removed (no date check)
+            elif why == "אין מילת מפתח בתיאור" or why.startswith("מיקום:"):
+                # e.g. its only keyword was in a privacy notice, or a remote job now known to be abroad
+                # -> a job already listed is removed (no date check)
                 tmp = Job(title=raw.title, company=raw.company or "לא צוין במקור", source=raw.source,
                           location="", experience="", reason="", url=raw.url, date_display="", date_iso=None)
                 stale.append((job_keys(tmp)[0], None, None))

@@ -455,5 +455,24 @@ class PrivacyNoticeKeywords(unittest.TestCase):
         self.assertEqual((cum2, removed), ([], 1))
 
 
+class RemoteLimitedToCountry(unittest.TestCase):
+    """'Remote' whose JSON-LD limits applicants to another country is abroad (DealHub / NVIDIA case)."""
+
+    def test_remote_us_is_foreign(self):
+        from agent.textutil import jsonld_location
+        jp = {"jobLocationType": "TELECOMMUTE", "applicantLocationRequirements": {"@type": "Country", "name": "United States"}}
+        loc = jsonld_location(jp)
+        self.assertEqual(loc, "Remote (United States)")
+        self.assertEqual(classify(loc)[0], "foreign")
+        jp["applicantLocationRequirements"] = {"@type": "State", "name": "Massachusetts, United States"}
+        self.assertEqual(classify(jsonld_location(jp))[0], "foreign")
+
+    def test_remote_israel_and_plain_remote_unchanged(self):
+        from agent.textutil import jsonld_location
+        jp = {"jobLocationType": "TELECOMMUTE", "applicantLocationRequirements": [{"@type": "Country", "name": "Israel"}]}
+        self.assertEqual(classify(jsonld_location(jp))[0], "israel")
+        self.assertEqual(jsonld_location({"jobLocationType": "TELECOMMUTE"}), "Remote")
+
+
 if __name__ == "__main__":
     unittest.main()

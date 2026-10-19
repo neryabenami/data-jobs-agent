@@ -101,7 +101,9 @@ def jsonld_location(jp):
                 country = "Israel"
             parts.append(", ".join(p for p in [city, region, country] if p))
     if jp.get("jobLocationType") == "TELECOMMUTE" and not parts:
-        parts.append("Remote")
+        # a remote job may still be limited to one country ("applicantLocationRequirements": "United States")
+        where = as_text(jp.get("applicantLocationRequirements"))
+        parts.append(f"Remote ({where})" if where else "Remote")
     return " | ".join(p for p in parts if p)
 
 
