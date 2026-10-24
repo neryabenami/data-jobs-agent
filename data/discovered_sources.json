@@ -1475,5 +1475,12 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-10-22"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "xometry",
+  "company": "Xometry",
+  "via": "נמצא דרך revpath.dealhub.io",
+  "found_on": "2026-10-24"
  }
 ]
