@@ -1489,5 +1489,68 @@
   "company": "Agoda",
   "via": "נמצא דרך LinkedIn",
   "found_on": "2026-10-25"
+ },
+ {
+  "kind": "lever",
+  "slug": "hive",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "erg",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "openx",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "bluesight",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "enablecomp",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "portcast",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "jobtwine",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "keyloop",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
+ },
+ {
+  "kind": "lever",
+  "slug": "kpler",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-10-26"
  }
 ]
