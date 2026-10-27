@@ -143,7 +143,8 @@ EXCLUDED_ROLES = [
 # research / security roles - those are not Data Analyst positions even when the text is analytical.
 CANDIDATE_BLOCK_TITLE = (
     r"\b(?:lead|leader|head|director|vp|vice president|chief|manager|management|researcher|research|security|"
-    r"cyber|principal engineer|owner)\b|ראש צוות|ראש תחום|מנהל|מנהלת|חוקר|חוקרת|סייבר|אבטחת"
+    r"cyber|principal engineer|owner|statisticians?|statistical programm\w*)\b|ראש צוות|ראש תחום|מנהל|מנהלת|"
+    r"חוקר|חוקרת|סייבר|אבטחת|סטטיסטיקאי|סטטיסטיקאית"
 )
 
 # Titles that may describe an analytics role even if not in the list (stage 1, 3.4)

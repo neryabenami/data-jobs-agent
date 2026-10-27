@@ -70,6 +70,8 @@ PRIVACY_RE = re.compile(r"personal (?:data|information|details)|privacy (?:polic
 APPLICANT_RE = re.compile(r"recruit|applica|candida|\bcv\b|resume|résumé|consent|retain|retention|stor(?:e|ed|age)|"
                           r"מועמד|קורות (?:ה)?חיים|הסכמ|גיוס|מאגר|יישמרו|ישמרו|נשמרים", re.I)
 SENTENCE_SPLIT_RE = re.compile(r"\n+|(?<=[.!?])\s+")
+# "בניית שאילתות חיפוש" = search queries in a monitoring / search tool, not data querying
+SEARCH_QUERIES_RE = re.compile(r"שאילת(?:ות|ה|א)\s+(?:ה)?חיפוש|search\s+quer(?:y|ies)", re.I)
 
 
 def strip_privacy_notice(text):
@@ -81,7 +83,7 @@ def strip_privacy_notice(text):
 def find_keywords(description):
     """Stage 3: mandatory keywords, searched case-insensitively inside the description only."""
     found = []
-    text = strip_privacy_notice(description)
+    text = SEARCH_QUERIES_RE.sub(" ", strip_privacy_notice(description))
     for name, rx in KEYWORD_RES.items():
         if rx.search(text):
             found.append(name)

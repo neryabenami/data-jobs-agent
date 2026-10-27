@@ -474,5 +474,18 @@ class RemoteLimitedToCountry(unittest.TestCase):
         self.assertEqual(jsonld_location({"jobLocationType": "TELECOMMUTE"}), "Remote")
 
 
+class SearchQueriesAndStatisticians(unittest.TestCase):
+    def test_search_queries_are_not_data_querying(self):  # Scooper case
+        self.assertEqual(rules.find_keywords("בניית שאילתות חיפוש מורכבות בכלי ניטור"), [])
+        self.assertEqual(rules.find_keywords("building complex search queries in monitoring tools"), [])
+        self.assertTrue(rules.find_keywords("כתיבת שאילתות על נתוני המכירות"))
+        self.assertIn("SQL", rules.find_keywords("search queries and SQL"))
+
+    def test_statistician_titles_blocked(self):  # Claims Conference case
+        for t in ["Statistical Programming Assistant", "Statistician", "סטטיסטיקאי/ת"]:
+            self.assertFalse(rules.is_potential(t), t)
+        self.assertTrue(rules.is_potential("Data Analyst"))
+
+
 if __name__ == "__main__":
     unittest.main()
