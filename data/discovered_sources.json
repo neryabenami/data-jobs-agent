@@ -1580,5 +1580,12 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-10-28"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "bringg",
+  "company": "",
+  "via": "https://www.bringg.com/careers",
+  "found_on": "2026-10-31"
  }
 ]
