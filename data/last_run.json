@@ -1,18 +1,18 @@
 {
- "run_at": "2026-10-31T07:00:30.124182+02:00",
- "raw": 1173,
- "accepted": 195,
+ "run_at": "2026-11-01T07:00:30.074393+02:00",
+ "raw": 1169,
+ "accepted": 193,
  "new": 2,
- "cumulative": 315,
- "removed": 2,
+ "cumulative": 304,
+ "removed": 13,
  "links": 625,
  "reasons": {
-  "אין מילת מפתח בתיאור": 531,
+  "אין מילת מפתח בתיאור": 530,
   "מיקום: ירושלים / Jerusalem": 17,
-  "נשלפה": 220,
-  "ישנה מ-20 ימים": 36,
+  "נשלפה": 218,
+  "ישנה מ-20 ימים": 35,
   "תיאור משרה מלא לא זמין": 2,
-  "כותרת לא סטנדרטית ללא מהות אנליטית מרכזית": 41,
+  "כותרת לא סטנדרטית ללא מהות אנליטית מרכזית": 40,
   "מיקום: מחוץ לישראל": 182,
   "כותרת לא רלוונטית": 4,
   "מיקום: אזור הצפון / North": 16,
@@ -22,7 +22,7 @@
   "כפילות בהרצה": 25,
   "מיקום: רחובות / Rehovot": 7,
   "מיקום: אזור הדרום / South": 1,
-  "מיקום: ראשון לציון / Rishon LeZion": 6
+  "מיקום: ראשון לציון / Rishon LeZion": 7
  },
  "locations_treated_as_abroad": {
   "US": 32,
@@ -76,9 +76,8 @@
   "Toronto Canada": 1,
   "Creve Coeur, US": 1,
   "New York, US": 1,
-  "Charlotte, NC, United States": 1,
-  "Hamburg, Germany": 1,
-  "New York, NY, United States (Remote)": 1,
+  "Chicago, IL, United States": 1,
+  "Maitland, FL, United States": 1,
   "Asuncion, PY": 1,
   "Lisbon, PT": 1,
   "Bishkek, KG": 1,
@@ -104,6 +103,7 @@
   "Ireland": 1,
   "Netherlands": 1,
   "New York, NY, United States": 1,
-  "Wisconsin - Madison": 1
+  "Wisconsin - Madison": 1,
+  "Canada - Toronto": 1
  }
 }
