@@ -87,6 +87,8 @@ def run_sources(ctx, only=None, today=""):
         steps.append(("ATS boards", scan_known_boards))
     if want("generic"):
         steps.append(("generic boards", lambda: generic.scan_generic_boards(ctx)))
+    if want("secret"):  # before discovery, so the companies seen here are probed too
+        steps.append(("Secret Tel Aviv", lambda: generic.scan_secret_tlv(ctx)))
     if want("discovery"):
         def discover():
             found = discovery.probe_companies(ctx, today)
@@ -172,6 +174,10 @@ def _location_key(location):
     return re.sub(r"\s(?:yafo|jaffa|יפו|district|illit|ilit|pituach|פיתוח)$", "", m.group(0))
 
 
+def _company_title_key(job):
+    return _company_key(job.company) + "|" + norm(job.title)
+
+
 def job_keys(job):
     """Primary key: the direct job URL. Secondary: company + title + city (same job on another site)."""
     alt = "|".join([_company_key(job.company), norm(job.title), _location_key(job.location)])
@@ -205,9 +211,12 @@ def update_cumulative(state, accepted, stale, now, company_types=None):
     cum = [Job.from_dict(d) for d in state["jobs"]]
     by_key = {j.key: j for j in cum}
     by_alt = {j.alt_key: j for j in cum}
+    by_company_title = {_company_title_key(j): j for j in cum}
     new_jobs = []
     for job in accepted:
         ex = by_key.get(job.key) or by_alt.get(job.alt_key)
+        if not ex and job.source == generic.SECRET_TLV_NAME:  # its area is coarse ("Tel Aviv/ Ramat Gan")
+            ex = by_company_title.get(_company_title_key(job))
         if ex:
             ex.last_seen = today
             if job.date_iso and (not ex.date_iso or job.date_iso > ex.date_iso):
@@ -220,6 +229,7 @@ def update_cumulative(state, accepted, stale, now, company_types=None):
         job.first_seen = job.last_seen = today
         cum.append(job)
         by_key[job.key], by_alt[job.alt_key] = job, job
+        by_company_title.setdefault(_company_title_key(job), job)
         new_jobs.append(job)
 
     # a later run found a reliable date showing the job is older than 20 days -> remove
@@ -255,9 +265,10 @@ def scan_and_evaluate(http, now, only=None):
     accepted, stale, reasons = [], [], Counter()
     typed = []  # (job, raw) pairs used to decide each company's type
     ctx.foreign_locations = Counter()  # audit trail: which location strings were treated as abroad
-    seen_keys, seen_alt = set(), set()
+    seen_keys, seen_alt, seen_company_title = set(), set(), set()
     per_listing = Counter()
-    for raw in ctx.raw_jobs:
+    # Secret Tel Aviv last: the company's own recruiting system wins when both list the same job
+    for raw in sorted(ctx.raw_jobs, key=lambda r: r.source == generic.SECRET_TLV_NAME):
         job, why, d = evaluate(raw, now)
         reasons[why] += 1
         if job is None:
@@ -275,11 +286,13 @@ def scan_and_evaluate(http, now, only=None):
                           location="", experience="", reason="", url=raw.url, date_display="", date_iso=None)
                 stale.append((job_keys(tmp)[0], None, None))
             continue
-        if job.key in seen_keys or job.alt_key in seen_alt:
+        if (job.key in seen_keys or job.alt_key in seen_alt or
+                (job.source == generic.SECRET_TLV_NAME and _company_title_key(job) in seen_company_title)):
             reasons["כפילות בהרצה"] += 1
             continue
         seen_keys.add(job.key)
         seen_alt.add(job.alt_key)
+        seen_company_title.add(_company_title_key(job))
         accepted.append(job)
         typed.append((job, raw))
         per_listing[raw.listing_url] += 1

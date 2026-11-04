@@ -2,7 +2,7 @@
 
 הסוכן רץ **בענן, בחינם**, על GitHub Actions. בכל בוקר הוא:
 
-1. סורק את LinkedIn, Drushim, JobMaster, AllJobs, Indeed, אתרי דרושים נוספים (GotFriends, JobKarov), עמודי קריירה של חברות (Greenhouse / Lever / Ashby / Workable / SmartRecruiters / Comeet; בנקודת ההתחלה יש כ-50 חברות), ואת הקישורים שהעלית בתיקייה `user_sources/`.
+1. סורק את LinkedIn, Drushim, JobMaster, AllJobs, Indeed, אתרי דרושים נוספים (GotFriends, JobKarov, Secret Tel Aviv), עמודי קריירה של חברות (Greenhouse / Lever / Ashby / Workable / SmartRecruiters / Comeet; בנקודת ההתחלה יש כ-50 חברות), ואת הקישורים שהעלית בתיקייה `user_sources/`.
 2. מאתר בעצמו מקורות חדשים: כל חברה שמופיעה בלוחות הדרושים נבדקת מול מערכות הגיוס הנפוצות, וכל לוח קריירה שנמצא עם משרות בישראל נוסף לסריקה הקבועה (`data/discovered_sources.json`).
 3. פותח כל משרה פוטנציאלית וקורא את **תיאור המשרה המלא**, ואז מפעיל את 7 השלבים: כותרת, תיאור מלא, מילת מפתח חובה, מהות התפקיד והחרגות, מיקום, 20 ימים, החלטה סופית.
 4. מעדכן את הרשימה המצטברת ומסיר ממנה משרות ישנות מ-20 ימים.

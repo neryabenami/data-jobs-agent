@@ -11,6 +11,9 @@ from ..net import FetchError
 from ..textutil import find_jsonld_jobposting, html_to_text, jsonld_location, main_content_text, site_name
 from . import ats, israeli_boards
 
+SECRET_TLV_NAME = "Secret Tel Aviv"
+SECRET_TLV_URL = "https://jobs.secrettelaviv.com/"
+SECRET_TLV_MAX_PAGES = 12
 JOB_HREF_RE = re.compile(r"job|career|position|opening|vacanc|משרה|misra|apply|/j/|/o/|/p/|jid|jobid|/\d{4,}", re.I)
 ATS_URL_RE = re.compile(r"https?:(?://|\\/\\/)[\w.-]*(?:greenhouse\.io|lever\.co|ashbyhq\.com|workable\.com|"
                         r"smartrecruiters\.com)[^\s\"'<>)]*", re.I)
@@ -223,6 +226,52 @@ def _emit(ctx, url, job, site, israeli_context, st):
                    description=job["description"], location=job.get("location", ""),
                    posted_raw=job.get("posted", ""), updated_raw=job.get("updated", ""),
                    israeli_context=israeli_context, listing_url=st.url))
+
+
+def scan_secret_tlv(ctx):
+    """Secret Tel Aviv job board: a paged HTML list; each card holds the company, area and date."""
+    http = ctx.http
+    st = ctx.status(SECRET_TLV_URL, SECRET_TLV_NAME, "סריקת לוח (HTML) + עמוד משרה (JSON-LD)")
+    if http.out_of_time():
+        st.fail("לא נסרק - הסתיים זמן הסריקה", "חלקי")
+        return
+    cards = {}
+    for page in range(1, SECRET_TLV_MAX_PAGES + 1):
+        try:
+            html = http.get_text(SECRET_TLV_URL + (f"page/{page}/" if page > 1 else ""))
+        except FetchError as e:
+            (st.fail(str(e)) if page == 1 else st.partial(f"עצירה בעמוד {page}: {e}"))
+            break
+        found = 0
+        for row in BeautifulSoup(html, "lxml").select(".wpjb-grid-row"):
+            a = row.select_one(".wpjb-col-title a[href]")
+            if not a or a["href"] in cards:
+                continue
+            found += 1
+            company = row.select_one(".wpjb-col-title .wpjb-sub")
+            location = row.select_one(".wpjb-col-location .wpjb-glyphs")
+            cards[a["href"]] = (a.get_text(" ", strip=True), company.get_text(" ", strip=True) if company else "",
+                                location.get_text(" ", strip=True) if location else "")
+        if not found:
+            break
+    fails = 0
+    for href, (title, company, location) in cards.items():
+        if not rules.is_potential(title) or not ctx.first_time(href):
+            continue
+        try:
+            jhtml = http.get_text(href)
+        except FetchError:
+            fails += 1
+            continue
+        job = _job_from_page(href, jhtml, fallback_title=title, site=SECRET_TLV_NAME)
+        company = company or job.get("company", "")
+        ctx.saw_company(company, SECRET_TLV_NAME)
+        ctx.add(RawJob(title=title, company=company, source=SECRET_TLV_NAME, url=href,
+                       description=job.get("description", ""), location=location or job.get("location", ""),
+                       posted_raw=job.get("posted", ""), updated_raw=job.get("updated", ""),
+                       israeli_context=True, listing_url=st.url))
+    if fails:
+        st.partial(f"{fails} עמודי משרה לא נטענו")
 
 
 def scan_generic_boards(ctx):

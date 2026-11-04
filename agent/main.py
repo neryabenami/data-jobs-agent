@@ -140,7 +140,7 @@ def main(argv=None):
     r.add_argument("--test-email", action="store_true", help="send a marked test e-mail immediately")
     r.add_argument("--force", action="store_true", help="run even if today's report was already sent")
     r.add_argument("--only", default="", help="comma list: user,linkedin,drushim,jobmaster,alljobs,indeed,ats,"
-                                              "generic,discovery")
+                                              "generic,secret,discovery")
     r.add_argument("--max-minutes", type=int, default=0)
     args = p.parse_args(argv)
     os.makedirs(C.DATA_DIR, exist_ok=True)

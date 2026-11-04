@@ -528,5 +528,47 @@ class AllJobsBoards(unittest.TestCase):
         self.assertEqual(sorted(u[-1] for u in ctx.subscribers_only), ["3", "4"])
 
 
+class SecretTelAvivBoard(unittest.TestCase):
+    def test_scan_reads_cards_across_pages(self):
+        import json
+        from agent.sources import ScanContext, generic
+
+        def row(slug, title, company, area):
+            return (f'<div class="wpjb-grid-row"><div class="wpjb-col-title"><a href="https://jobs.secrettelaviv.com/job/{slug}/">'
+                    f'{title}</a><span class="wpjb-sub">{company}</span></div><div class="wpjb-col-location">'
+                    f'<span class="wpjb-glyphs">{area}</span></div></div>')
+        pages = {generic.SECRET_TLV_URL: row("da-1", "Data Analyst", "Acme", "Tel Aviv/ Ramat Gan") +
+                 row("dev-1", "Backend Developer", "Acme", "Tel Aviv/ Ramat Gan"),
+                 generic.SECRET_TLV_URL + "page/2/": row("ba-1", "Business Analyst", "Beta", "Netanya")}
+        job_page = ('<script type="application/ld+json">' + json.dumps(
+            {"@type": "JobPosting", "title": "x", "description": DA_DESC, "datePosted": "2026-09-20"}) + "</script>")
+
+        class FakeHttp:
+            def out_of_time(self):
+                return False
+
+            def get_text(self, url, **kw):
+                return job_page if "/job/" in url else pages.get(url, "")
+
+        ctx = ScanContext(FakeHttp(), NOW)
+        generic.scan_secret_tlv(ctx)
+        self.assertEqual([(r.title, r.company, r.location) for r in ctx.raw_jobs],
+                         [("Data Analyst", "Acme", "Tel Aviv/ Ramat Gan"), ("Business Analyst", "Beta", "Netanya")])
+        job, _, _ = pipeline.evaluate(ctx.raw_jobs[0], NOW)
+        self.assertIsNotNone(job)
+
+    def test_same_job_elsewhere_is_not_repeated(self):
+        def evaluated(source, url, loc):
+            r = raw(url=url, loc=loc)
+            r.source, r.company = source, "Port"
+            return pipeline.evaluate(r, NOW)[0]
+        ats_job = evaluated("Comeet", "https://www.comeet.com/jobs/port/1", "Ramat Gan, Israel")
+        _, cum, _ = pipeline.update_cumulative({"jobs": []}, [ats_job], [], NOW)
+        state = {"jobs": [j.to_dict() for j in cum]}
+        secret_job = evaluated("Secret Tel Aviv", "https://jobs.secrettelaviv.com/job/da/", "Tel Aviv/ Ramat Gan")
+        new, cum2, _ = pipeline.update_cumulative(state, [secret_job], [], NOW)
+        self.assertEqual((new, len(cum2)), ([], 1))
+
+
 if __name__ == "__main__":
     unittest.main()
