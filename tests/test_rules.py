@@ -487,5 +487,46 @@ class SearchQueriesAndStatisticians(unittest.TestCase):
         self.assertTrue(rules.is_potential("Data Analyst"))
 
 
+class AllJobsBoards(unittest.TestCase):
+    """Free cards are read (also with an English title); subscribers-only cards are skipped and removed."""
+
+    @staticmethod
+    def _card(jid, board, title_class, title):
+        return (f'<div class="{board}" id="job-box-container{jid}"><div class="{title_class}">'
+                f'<a href="/Search/UploadSingle.aspx?JobID={jid}"><h2>{title}</h2></a></div></div>')
+
+    def test_scan(self):
+        import json
+        from agent.sources import ScanContext, israeli_boards
+        job_page = ('<script type="application/ld+json">' + json.dumps(
+            {"@type": "JobPosting", "title": "Data Analyst", "description": DA_DESC,
+             "hiringOrganization": {"name": "Acme"}}) + "</script>")
+        cards = [self._card(1, "open-board", "job-content-top-title", "דאטה אנליסט"),
+                 self._card(2, "open-board", "job-content-top-title-ltr", "Data Analyst"),
+                 self._card(3, "organic-board", "job-content-top-title closed-job", "דאטה אנליסט"),
+                 self._card(4, "organic-board", "job-content-top-title-ltr closed-job", "Data Analyst")]
+
+        class FakeHttp:
+            pages = 0
+
+            def out_of_time(self):
+                return False
+
+            def get_text(self, url, **kw):
+                if "UploadSingle" in url:
+                    return job_page
+                self.pages += 1
+                return "".join(cards) if self.pages == 1 else ""
+
+        ctx = ScanContext(FakeHttp(), NOW)
+        queries, C.BOARD_QUERIES = C.BOARD_QUERIES, ["data analyst"]
+        try:
+            israeli_boards.scan_alljobs(ctx)
+        finally:
+            C.BOARD_QUERIES = queries
+        self.assertEqual(sorted(r.job_id for r in ctx.raw_jobs), ["1", "2"])
+        self.assertEqual(sorted(u[-1] for u in ctx.subscribers_only), ["3", "4"])
+
+
 if __name__ == "__main__":
     unittest.main()

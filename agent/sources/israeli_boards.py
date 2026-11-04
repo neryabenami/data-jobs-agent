@@ -166,7 +166,8 @@ def scan_alljobs(ctx):
             page_ids = []
             for b in boxes:
                 a = b.select_one('a[href*="UploadSingle.aspx?JobID="]')
-                t = b.select_one(".job-content-top-title")
+                # cards with an English title use the "-ltr" class
+                t = b.select_one(".job-content-top-title, .job-content-top-title-ltr")
                 if not a or not t:
                     continue
                 m = re.search(r"JobID=(\d+)", a["href"])
@@ -174,10 +175,13 @@ def scan_alljobs(ctx):
                     continue
                 jid = m.group(1)
                 page_ids.append(jid)
+                job_url = f"https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID={jid}"
+                if "organic-board" in (b.get("class") or []):  # "לוח ללקוחות בלבד": subscribers only
+                    ctx.subscribers_only.add(job_url)
+                    continue
                 card_title = t.get_text(" ", strip=True)
                 if not rules.is_potential(card_title):
                     continue
-                job_url = f"https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID={jid}"
                 if not ctx.first_time(job_url):
                     continue
                 date_el = b.select_one(".job-content-top-date")

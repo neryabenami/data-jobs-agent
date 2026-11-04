@@ -15,6 +15,7 @@ class ScanContext:
         self.companies = {}          # company name -> site where seen (feeds ATS discovery)
         self.new_boards = []         # (kind, slug, company, via) discovered during this run
         self.comeet_done = set()     # Comeet company UIDs already scanned in this run
+        self.subscribers_only = set()  # job URLs open to paying subscribers only (AllJobs) - never shown
         self._seen = set()
         self._lock = threading.Lock()
 

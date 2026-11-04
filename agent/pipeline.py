@@ -283,6 +283,8 @@ def scan_and_evaluate(http, now, only=None):
         accepted.append(job)
         typed.append((job, raw))
         per_listing[raw.listing_url] += 1
+    # a job that moved to a subscribers-only board leaves the cumulative list too
+    stale.extend((canonical_url(url), None, None) for url in ctx.subscribers_only)
     types = company_type.company_map(typed, _company_key)
     for job in accepted:
         job.company_type = types.get(_company_key(job.company), company_type.OTHER)
