@@ -1706,5 +1706,40 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-11-04"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "aksia",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-11-05"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "drweng",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-11-05"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "alpaca",
+  "company": "",
+  "via": "Bing",
+  "found_on": "2026-11-05"
+ },
+ {
+  "kind": "comeet",
+  "slug": "comeet.com/jobs/port/59.004",
+  "company": "",
+  "via": "https://www.comeet.com/jobs/port/59.004",
+  "found_on": "2026-11-05"
+ },
+ {
+  "kind": "comeet",
+  "slug": "comeet.com/jobs/prettydamnquick/0A.00E",
+  "company": "",
+  "via": "https://www.comeet.com/jobs/prettydamnquick/0A.00E",
+  "found_on": "2026-11-05"
  }
 ]
