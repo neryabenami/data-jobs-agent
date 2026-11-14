@@ -570,5 +570,49 @@ class SecretTelAvivBoard(unittest.TestCase):
         self.assertEqual((new, len(cum2)), ([], 1))
 
 
+class ComeetDetectionAndAdamTotal(unittest.TestCase):
+    def test_comeet_written_in_different_ways(self):
+        from agent.sources import ats
+        cases = {
+            "var api_url = 'https://www.comeet.co/careers-api/2.0/company/B3.006/positions/?token=3B6128EB22&details=true';"
+            .replace("3B6128EB22", "3B6128EB2219FA019FA19FAB222166B22"): "B3.006|3B6128EB2219FA019FA19FAB222166B22",
+            'COMEET.init({token:"5831B8F2C185832C182C181B8F319BB061089","company-uid":"85.003"})':
+                "85.003|5831B8F2C185832C182C181B8F319BB061089",
+            # a lower-case token of another service on the same page must not be taken
+            '{"token":"ef0ce12b28b842ea926932b14ec317fd"} const COMPANY_UID = \'88.008\'; '
+            'const TOKEN = \'88833303BB81998222022202220044403330\';': "88.008|88833303BB81998222022202220044403330",
+            r'{\"positionUid\":\"9A.338\",\"companyUid\":\"F6.006\",\"token\":\"6F629C4DEC3EA60029C4029C40\"}':
+                "F6.006|6F629C4DEC3EA60029C4029C40",
+        }
+        for html, expected in cases.items():
+            self.assertIn(("api", expected), ats.find_comeet(html), html)
+
+    def test_adamtotal_cards(self):
+        from agent.sources import ScanContext, generic
+        page = ('<div class="job-card-logo"><img alt="לוגו הראל ביטוח ופיננסים, כן מצטרפים"></div>'
+                '<article class="job-card" data-job-title=" לאגף ארגון ושיטות Data Analyst">'
+                '<div class="job-meta"><span><i class="fas fa-map-marker-alt"></i>גוש דן | בית מ.א.ה</span></div>'
+                '<a class="job-detail-link" href="/Jobs/JobDetails?token=abc">לפרטים</a>'
+                '<div class="description-text"><p>ניתוח מסדי נתונים גדולים, הסקת תובנות ובניית דוחות להנהלה. '
+                'ניסיון ב SQL – חובה, ניסיון בטאבלו ובפייתון – יתרון</p></div></article>'
+                '<article class="job-card" data-job-title="נציג/ת שירות לקוחות">'
+                '<a class="job-detail-link" href="/Jobs/JobDetails?token=xyz">לפרטים</a></article>')
+
+        class FakeHttp:
+            def out_of_time(self):
+                return False
+
+            def get_text(self, url, **kw):
+                return page
+
+        ctx = ScanContext(FakeHttp(), NOW)
+        generic.crawl(ctx, "https://career.adamtotal.co.il/?token=t-harel")
+        self.assertEqual([(r.title, r.company, r.location) for r in ctx.raw_jobs],
+                         [("לאגף ארגון ושיטות Data Analyst", "הראל ביטוח ופיננסים", "גוש דן | בית מ.א.ה")])
+        job, why, _ = pipeline.evaluate(ctx.raw_jobs[0], NOW)
+        self.assertIsNotNone(job, why)
+        self.assertEqual(job.url, "https://career.adamtotal.co.il/Jobs/JobDetails?token=abc")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -259,7 +259,7 @@ SEED_ATS_BOARDS = [
     ("ashby", "finout"), ("ashby", "honeybook"), ("ashby", "lemonade"), ("ashby", "moonactive"),
     ("ashby", "sisense"), ("greenhouse", "apiiro"), ("greenhouse", "appsflyer"), ("greenhouse", "axonius"),
     ("greenhouse", "bigid"), ("greenhouse", "datarails"), ("greenhouse", "forter"), ("greenhouse", "gongio"),
-    ("greenhouse", "innovid"), ("greenhouse", "island"), ("greenhouse", "jfrog"), ("greenhouse", "lightricks"),
+    ("greenhouse", "island"), ("greenhouse", "jfrog"), ("greenhouse", "lightricks"),
     ("greenhouse", "melio"), ("greenhouse", "nanit"), ("greenhouse", "nice"), ("greenhouse", "obligo"),
     ("greenhouse", "optimove"), ("greenhouse", "orcasecurity"), ("greenhouse", "payoneer"),
     ("greenhouse", "riskified"), ("greenhouse", "similarweb"), ("greenhouse", "taboola"), ("greenhouse", "torq"),

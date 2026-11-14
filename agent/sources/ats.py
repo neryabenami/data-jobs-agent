@@ -211,18 +211,28 @@ def scan_board(ctx, kind, slug, company_hint=""):
 
 # ----------------------------------------------------------------------------- Comeet
 COMEET_PAGE_RE = re.compile(r"comeet\.com/jobs/([\w-]+)/([0-9A-F]{2}\.[0-9A-F]{3})", re.I)
-COMEET_UID_RE = re.compile(r"""(?:comeet_uid|company-uid|company_uid|integration_id)["'\s:=]+["']([0-9A-F]{2}\.[0-9A-F]{3})""",
-                           re.I)
-COMEET_TOKEN_RE = re.compile(r"""(?:comeet_token|integration_token|["']token)["'\s:=]+["']([0-9A-F]{16,})""", re.I)
+# uid / token written as: "company-uid": "85.003" | COMPANY_UID = '88.008' | \"companyUid\":\"F6.006\" (escaped JSON)
+COMEET_UID_RE = re.compile(r"""(?i:comeet_uid|company-uid|company_uid|companyuid|integration_id)[\\"'\s:=]+["']"""
+                           r"""([0-9A-F]{2}\.[0-9A-F]{3})""")
+# Comeet tokens are upper-case hex; lower-case hex tokens on the same page belong to other services (e.g. Cloudflare)
+COMEET_TOKEN_RE = re.compile(r"""(?i:comeet_token|integration_token|(?<![\w-])token)[\\"'\s:=]+["']([0-9A-F]{16,})(?![0-9a-z])""")
+COMEET_API_URL_RE = re.compile(r"comeet\.co/careers-api/2\.0/company/([0-9A-F]{2}\.[0-9A-F]{3})/positions/?\?token=([0-9A-F]{16,})")
 
 
 def find_comeet(html):
     """Comeet boards referenced by a page: ('page', company_page_url) and/or ('api', 'UID|TOKEN')."""
+    html = html or ""
     found = set()
-    for slug, uid in COMEET_PAGE_RE.findall(html or ""):
+    for slug, uid in COMEET_PAGE_RE.findall(html):
         found.add(("page", f"https://www.comeet.com/jobs/{slug}/{uid.upper()}"))
-    uid, token = COMEET_UID_RE.search(html or ""), COMEET_TOKEN_RE.search(html or "")
-    if uid and token:
+    m = COMEET_API_URL_RE.search(html)
+    if m:
+        found.add(("api", f"{m.group(1).upper()}|{m.group(2)}"))
+        return found
+    uid = COMEET_UID_RE.search(html)
+    tokens = list(COMEET_TOKEN_RE.finditer(html))
+    if uid and tokens:  # the token written next to the company uid
+        token = min(tokens, key=lambda t: abs(t.start() - uid.start()))
         found.add(("api", f"{uid.group(1).upper()}|{token.group(1)}"))
     return found
 

@@ -1,0 +1,7 @@
+# 2026-11-14: מערכות הגיוס שמאחורי אתרי קריירה שהסוכן לא הצליח לקרוא
+# Tipalti - לוח בגרינהאוס (מוטמע בעמוד https://tipalti.com/company/jobs/)
+https://job-boards.greenhouse.io/tipaltisolutions
+# Redis - לוח ב-Ashby
+https://jobs.ashbyhq.com/redis
+# Imperva - חלק מ-Thales, המשרות ב-Workday של Thales
+https://thales.wd3.myworkdayjobs.com/Careers

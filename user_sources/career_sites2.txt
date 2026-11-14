@@ -48,7 +48,8 @@ https://elementor.careers/explore/
 https://jobs.aligntech.com/jobs?page=1&sortBy=relevance&radiusUnit=MILES&radius=10&location=Israel&woe=12&stretchUnit=MILES&stretch=10
 https://www.lsports.eu/careers/
 
-https://www.comeet.com/jobs/hibob/12.00A
+# הוסר 2026-11-14: HiBob כבר לא משתמשת ב-Comeet (העמוד נכשל כל יום)
+# https://www.comeet.com/jobs/hibob/12.00A
 
 https://careers.remitly.com/all-open-jobs/
 
@@ -121,9 +122,11 @@ https://www.555.co.il/about/career.html#jobs
 
 https://jobs.paloaltonetworks.com/en/search-jobs/analyst/47263/1
 
-https://careers.topmatch.co.il/Harel/
+# 2026-11-14: הראל עברה ל-Adam Total (הקישור הישן החזיר 404)
+https://career.adamtotal.co.il/?token=6675d401-0dee-428a-a776-5d41885d16b0-harel
 
-https://www.investing-careers.com/positions/
+# הוסר 2026-11-14: עמוד המשרות לא קיים (404), ובאתר אין עמוד משרות אחר
+# https://www.investing-careers.com/positions/
 
 https://www.superplay.co/careers/
 

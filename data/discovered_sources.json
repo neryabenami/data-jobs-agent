@@ -799,13 +799,6 @@
  },
  {
   "kind": "comeet_api",
-  "slug": "7A.004|A74492C3444A74492C53A05E1414E83EB81F5C",
-  "company": "",
-  "via": "https://www.wonderful.ai/careers",
-  "found_on": "2026-09-30"
- },
- {
-  "kind": "comeet_api",
   "slug": "E6.005|6E5295EDCA304314AF03043295E1B942279",
   "company": "",
   "via": "https://www.appdome.com/about/work-at-appdome/",
@@ -814,13 +807,6 @@
  {
   "kind": "ashby",
   "slug": "echo.ai",
-  "company": "",
-  "via": "https://www.echo.ai/careers",
-  "found_on": "2026-09-30"
- },
- {
-  "kind": "comeet_api",
-  "slug": "9A.006|A964A1A34EE3F845F4654B02A5834EE5F462A58",
   "company": "",
   "via": "https://www.echo.ai/careers",
   "found_on": "2026-09-30"
@@ -904,8 +890,8 @@
  },
  {
   "kind": "comeet_api",
-  "slug": "88.008|ef0ce12b28b842ea926932b14ec317fd",
-  "company": "",
+  "slug": "88.008|88833303BB81998222022202220044403330",
+  "company": "groundcover",
   "via": "https://www.groundcover.com/careers",
   "found_on": "2026-09-30"
  },
@@ -921,13 +907,6 @@
   "slug": "37.004|7342B38159C159C40D41CD0073440D42404",
   "company": "",
   "via": "https://www.comeet.com/jobs/legitsecurity.com/37.004",
-  "found_on": "2026-09-30"
- },
- {
-  "kind": "greenhouse",
-  "slug": "residenthome",
-  "company": "",
-  "via": "https://job-boards.greenhouse.io/residenthome",
   "found_on": "2026-09-30"
  },
  {
@@ -1089,13 +1068,6 @@
   "slug": "C6.001|6C12886D821B0414432886144328862F472F47",
   "company": "",
   "via": "https://arberobotics.com/careers/",
-  "found_on": "2026-09-30"
- },
- {
-  "kind": "comeet_api",
-  "slug": "D3.00B|3DB1347F6C7B63DB3DB13471AFD3DB3DB",
-  "company": "",
-  "via": "https://ree.auto/careers/",
   "found_on": "2026-09-30"
  },
  {
@@ -1302,13 +1274,6 @@
   "found_on": "2026-10-07"
  },
  {
-  "kind": "lever",
-  "slug": "dnb.",
-  "company": "",
-  "via": "https://revpath.dealhub.io/",
-  "found_on": "2026-10-09"
- },
- {
   "kind": "greenhouse",
   "slug": "recidiviz",
   "company": "",
@@ -1408,13 +1373,6 @@
  },
  {
   "kind": "greenhouse",
-  "slug": "neoris",
-  "company": "",
-  "via": "Bing",
-  "found_on": "2026-10-22"
- },
- {
-  "kind": "greenhouse",
   "slug": "8451",
   "company": "",
   "via": "Bing",
@@ -1423,20 +1381,6 @@
  {
   "kind": "greenhouse",
   "slug": "bandwidth",
-  "company": "",
-  "via": "Bing",
-  "found_on": "2026-10-22"
- },
- {
-  "kind": "greenhouse",
-  "slug": "cbeyondata",
-  "company": "",
-  "via": "Bing",
-  "found_on": "2026-10-22"
- },
- {
-  "kind": "greenhouse",
-  "slug": "swishanalytics",
   "company": "",
   "via": "Bing",
   "found_on": "2026-10-22"
@@ -1458,13 +1402,6 @@
  {
   "kind": "greenhouse",
   "slug": "postscript",
-  "company": "",
-  "via": "Bing",
-  "found_on": "2026-10-22"
- },
- {
-  "kind": "greenhouse",
-  "slug": "thumbtack",
   "company": "",
   "via": "Bing",
   "found_on": "2026-10-22"

@@ -26,11 +26,13 @@ https://corporate.365scores.com/careers/
 https://www.placer.ai/company/we-are-hiring
 https://www.viber.com/en/careers-israel/
 https://unity.com/careers/positions
-https://www.bankhapoalim.co.il/he/about/career
+# 2026-11-14: כתובת חדשה (הישנה החזירה 404)
+https://www.bankhapoalim.co.il/forms/he/jobs-site
 https://www.leumi.co.il/he/Articles/38822
 https://www.discountbank.co.il/DB/private/about-discount/career/
 https://www.mizrahi-tefahot.co.il/about-mizrahi-tefahot-he/career/
-https://www.fibi.co.il/private/general/about/career/
+# 2026-11-14: כתובת חדשה (הישנה החזירה 404)
+https://www.fibi.co.il/private/general/about/jobs/
 https://marketing.isracard.co.il/careershome/
 https://www.harel-group.co.il/careers
 https://my.migdal.co.il/career_migdal
@@ -75,7 +77,8 @@ https://www.zim.com/careers
 https://www.strauss-group.com/careers/
 https://www.cellcom.co.il/career/
 https://www.partner.co.il/globalassets/global/drushimsersupport/index.html
-https://www.bezeq.co.il/aboutus/jobs/
+# הוסר 2026-11-14: עמוד המשרות לא קיים (404), ולא נמצא עמוד חדש
+# https://www.bezeq.co.il/aboutus/jobs/
 https://www.hot.net.il/heb/careersearch/
 https://www.tnuva.co.il/career/
 

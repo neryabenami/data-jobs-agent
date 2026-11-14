@@ -150,6 +150,11 @@ def crawl(ctx, url, method="סריקה כללית של עמוד (HTML / JSON-LD)
         return
     soup = BeautifulSoup(html, "lxml")
 
+    # 0) Adam Total job board (Israeli recruiting system): every job, with its full text, is on one page
+    if "adamtotal.co.il" in urlparse(url).netloc:
+        _scan_adamtotal(ctx, url, soup, site, st)
+        return
+
     # 1) ATS boards referenced anywhere in the page (links, iframes, widget scripts, embedded JSON).
     #    Checked first: a careers page may carry JSON-LD for one job while the ATS holds all of them.
     embedded = set()
@@ -215,6 +220,31 @@ def crawl(ctx, url, method="סריקה כללית של עמוד (HTML / JSON-LD)
         _emit(ctx, href, _job_from_page(href, jhtml, fallback_title=text, site=site), site, israeli_context, st)
     if fails:
         st.partial(f"{fails} עמודי משרה לא נטענו")
+
+
+def _scan_adamtotal(ctx, url, soup, site, st):
+    """career.adamtotal.co.il: job cards with title, area and the full description (no posting date)."""
+    logo = soup.select_one(".job-card-logo img[alt]")
+    company = re.sub(r"^לוגו\s+", "", logo["alt"]).split(",")[0].strip() if logo else ""
+    company = company or site
+    cards = soup.select("article.job-card")
+    if not cards:
+        st.partial("לא נמצאו משרות בעמוד Adam Total")
+    for card in cards:
+        title = (card.get("data-job-title") or "").replace("\\", "/").strip()
+        link = card.select_one("a.job-detail-link[href]")
+        desc = card.select_one(".description-text")
+        if not title or not link or not rules.is_potential(title):
+            continue
+        job_url = urljoin(url, link["href"])
+        if not ctx.first_time(job_url):
+            continue
+        place = card.select_one(".job-meta .fa-map-marker-alt")
+        location = place.parent.get_text(" ", strip=True) if place else ""
+        ctx.saw_company(company, site)
+        ctx.add(RawJob(title=title, company=company, source=site, url=job_url,
+                       description=desc.get_text("\n", strip=True) if desc else "", location=location,
+                       israeli_context=True, listing_url=st.url))
 
 
 def _emit(ctx, url, job, site, israeli_context, st):

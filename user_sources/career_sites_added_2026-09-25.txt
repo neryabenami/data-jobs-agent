@@ -19,7 +19,8 @@ https://jobs.intuit.com/location/israel-jobs/27595/294640/2
 https://www.onezero.co.il/careers
 
 # נפתחות, כרגע בלי משרה רלוונטית
-https://www.yellowhead.com/careers/
+# הוסר 2026-11-14: עמוד הקריירה לא קיים (404), ובאתר אין קישור לעמוד חדש
+# https://www.yellowhead.com/careers/
 https://www.fortinet.com/corporate/careers
 https://www.qodo.ai/careers/
 https://www.autofleet.io/careers

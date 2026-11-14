@@ -70,9 +70,11 @@ https://remedio.io/careers/
 https://www.comeet.com/jobs/vega/C9.009
 https://www.mixtiles.com/careers
 https://jobs.lever.co/CYE
-https://www.wonderful.ai/careers
+# הוסר 2026-11-14: קוד הגישה ל-Comeet שבאתר כבר לא תקף (נכשל כל יום)
+# https://www.wonderful.ai/careers
 https://www.appdome.com/about/work-at-appdome/
-https://www.echo.ai/careers
+# הוסר 2026-11-14: קוד הגישה ל-Comeet שבאתר כבר לא תקף; המשרות נסרקות דרך Ashby (echo.ai)
+# https://www.echo.ai/careers
 https://eleos.health/career/
 https://www.zafran.io/careers
 https://www.comeet.com/jobs/hypernative/8A.00E
@@ -111,11 +113,13 @@ https://careers.stryker.com/
 https://careers.unilever.com/
 https://moovit.com/careers/
 https://arberobotics.com/careers/
-https://ree.auto/careers/
+# הוסר 2026-11-14: קוד הגישה ל-Comeet שבאתר כבר לא תקף (נכשל כל יום)
+# https://ree.auto/careers/
 https://notraffic.tech/careers/
 https://www.trieye.tech/careers/
 https://www.tat-technologies.com/careers/
-https://www.bsel.co.il/careers/
+# 2026-11-14: האתר חוסם שרתי ענן; המשרות נסרקות דרך Comeet
+https://www.comeet.com/jobs/betshemeshengines/1A.002
 https://www.accenture.com/il-en/careers
 https://www.pentera.io/careers/
 https://www.comeet.com/careers/
