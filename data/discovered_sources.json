@@ -1706,5 +1706,75 @@
   "company": "",
   "via": "https://www.verint.com/careers/",
   "found_on": "2026-11-14"
+ },
+ {
+  "kind": "smartrecruiters",
+  "slug": "CheckPointSoftwareTechnologies2",
+  "company": "",
+  "via": "https://careers.checkpoint.com/?q=&module=cpcareers&a=search&fa%5B%5D=country_ss%3AIsrael&sort=",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "46.00B|64B25C264B12E112E102C0D2C0D64B25C2",
+  "company": "",
+  "via": "https://www.papaya.com/careers#open-positions-section",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "B3.006|3B6128EB2219FA019FA19FAB222166B22",
+  "company": "",
+  "via": "https://corporate.365scores.com/careers/",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "85.003|5831B8F2C185832C182C181B8F319BB061089",
+  "company": "",
+  "via": "https://www.artlistjobs.io/",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "comeet_api",
+  "slug": "19.000|9103660519012202D5024401B3091024403660",
+  "company": "",
+  "via": "https://zenity.io/careers",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "residenthome",
+  "company": "",
+  "via": "https://job-boards.greenhouse.io/residenthome",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "comeet",
+  "slug": "comeet.com/jobs/betshemeshengines/1A.002",
+  "company": "",
+  "via": "https://www.comeet.com/jobs/betshemeshengines/1A.002",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "greenhouse",
+  "slug": "tipaltisolutions",
+  "company": "",
+  "via": "https://job-boards.greenhouse.io/tipaltisolutions",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "ashby",
+  "slug": "redis",
+  "company": "",
+  "via": "https://jobs.ashbyhq.com/redis",
+  "found_on": "2026-11-15"
+ },
+ {
+  "kind": "workday",
+  "slug": "https://thales.wd3.myworkdayjobs.com/Careers",
+  "company": "",
+  "via": "https://thales.wd3.myworkdayjobs.com/Careers",
+  "found_on": "2026-11-15"
  }
 ]
