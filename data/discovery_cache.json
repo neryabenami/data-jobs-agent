@@ -171,7 +171,7 @@
  "telus": "2026-10-25",
  "sisense": "2026-09-24",
  "base44": "2026-10-25",
- "jobgether": "2026-09-24",
+ "jobgether": "2026-11-18",
  "telus-digital": "2026-10-25",
  "veeva": "2026-10-25",
  "clover": "2026-10-25",
@@ -993,5 +993,10 @@
  "biscience": "2026-11-17",
  "dnassociatesexecutivesearchpteheadhunter": "2026-11-17",
  "sigma": "2026-11-17",
- "opc-energy": "2026-11-17"
+ "opc-energy": "2026-11-17",
+ "arrowelectronics": "2026-11-18",
+ "arrow": "2026-11-18",
+ "arrow-electronics": "2026-11-18",
+ "expressvpn": "2026-11-18",
+ "castro": "2026-11-18"
 }
