@@ -1867,5 +1867,12 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-11-19"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/cyera/17.008",
+  "company": "",
+  "via": "https://www.oasis.security/careers",
+  "found_on": "2026-11-21"
  }
 ]
