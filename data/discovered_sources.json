@@ -1895,5 +1895,19 @@
   "company": "",
   "via": "Bing",
   "found_on": "2026-11-24"
+ },
+ {
+  "kind": "ashby",
+  "slug": "factory",
+  "company": "FACTORY 54",
+  "via": "נמצא דרך Drushim",
+  "found_on": "2026-11-25"
+ },
+ {
+  "kind": "comeet",
+  "slug": "https://www.comeet.com/jobs/coralogix/06.004",
+  "company": "",
+  "via": "https://coralogix.com/careers/",
+  "found_on": "2026-11-25"
  }
 ]
