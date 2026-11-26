@@ -1,6 +1,134 @@
 {
  "jobs": [
   {
+   "title": "Senior BI & Analytics Specialist",
+   "company": "Aqurate Data",
+   "source": "LinkedIn",
+   "location": "Shoham, Center District, Israel",
+   "experience": "ניסיון של 5 שנים לפחות בפיתוח דשבורד",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Python, DWH",
+   "url": "https://www.linkedin.com/jobs/view/4493366812",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://www.linkedin.com/jobs/view/4493366812",
+   "alt_key": "aquratedata|senior bi analytics specialist|shoham",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "דרוש /ה Senior BI & Analytics Specialist",
+   "company": "One DatAI",
+   "source": "AllJobs",
+   "location": "שוהם",
+   "experience": "3 שנות ניסיון ב-Tableau- לפחות שנ",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Python, DWH",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8856435",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8856435",
+   "alt_key": "onedatai|דרוש ה senior bi analytics specialist|שוהם",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Data Insights & Analytics Lead",
+   "company": "Lumenis",
+   "source": "Lumenis",
+   "location": "Tel Aviv-Yafo, Israel",
+   "experience": "",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Power BI, Qlik, Python",
+   "url": "https://www.comeet.com/jobs/lumenis/A1.00C/data-insights--analytics-lead/66.374",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://comeet.com/jobs/lumenis/A1.00C/data-insights--analytics-lead/66.374",
+   "alt_key": "lumenis|data insights analytics lead|tel aviv",
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Senior Marketing Analytics",
+   "company": "monday.com",
+   "source": "LinkedIn",
+   "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+   "experience": "4+ years of experience",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Power BI, Looker, Python, Data Warehouse",
+   "url": "https://www.linkedin.com/jobs/view/4470486906",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4470486906",
+   "alt_key": "mondaycom|senior marketing analytics|tel aviv",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "BI & Analytics Specialist",
+   "company": "ONE datAI",
+   "source": "LinkedIn",
+   "location": "Center District, Israel",
+   "experience": "2+ years of experience",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Python, Data Warehouse, DWH",
+   "url": "https://www.linkedin.com/jobs/view/4493022235",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4493022235",
+   "alt_key": "onedatai|bi analytics specialist|center",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "BI Developer Analyst",
+   "company": "ppltx",
+   "source": "LinkedIn",
+   "location": "Tel Aviv District, Israel",
+   "experience": "3–5+ years",
+   "reason": "כותרת משולבת - עיקר העבודה אנליטי; מילות מפתח בתיאור: SQL, Python, Database, Data Warehouse, BigQuery",
+   "url": "https://www.linkedin.com/jobs/view/4493449619",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4493449619",
+   "alt_key": "ppltx|bi developer analyst|tel aviv",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Junior Developer and Data Analyst – SAP HANA Cloud Control Plane – Cost Optimization & TCO",
+   "company": "SAP",
+   "source": "LinkedIn",
+   "location": "Raanana, Center District, Israel",
+   "experience": "1 year of relevant programming work experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: Python, Database",
+   "url": "https://www.linkedin.com/jobs/view/4493449127",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4493449127",
+   "alt_key": "sap|junior developer data analyst sap hana cloud control plane cost optimization tco|raanana",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "FP&A Analyst",
+   "company": "Sygnia",
+   "source": "LinkedIn",
+   "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+   "experience": "3 years of experience",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.linkedin.com/jobs/view/4478233196",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4478233196",
+   "alt_key": "sygnia|fp a analyst|tel aviv",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
    "title": "Data Analyst עבור ארגון בריאות",
    "company": "Jobist",
    "source": "LinkedIn",
@@ -17,6 +145,22 @@
    "company_type": "הייטק"
   },
   {
+   "title": "Operations Analyst",
+   "company": "Mize",
+   "source": "Mize",
+   "location": "Tel Aviv-Yafo, Israel",
+   "experience": "2+ years of experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL",
+   "url": "https://www.comeet.com/jobs/mize/88.000/operations-analyst/5B.558",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://comeet.com/jobs/mize/88.000/operations-analyst/5B.558",
+   "alt_key": "mize|operations analyst|tel aviv",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
    "title": "Senior Data Analyst",
    "company": "Yad2",
    "source": "LinkedIn",
@@ -29,7 +173,39 @@
    "key": "https://www.linkedin.com/jobs/view/4490260350",
    "alt_key": "yad2|senior data analyst|petah tikva",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Product Analyst",
+   "company": "Justt",
+   "source": "Justt",
+   "location": "Tel Aviv-Jaffa, Israel",
+   "experience": "3+ years of experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Python, Data Warehouse, Snowflake",
+   "url": "https://www.comeet.com/jobs/justt/36.001/product-analyst/33.57D",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://comeet.com/jobs/justt/36.001/product-analyst/33.57D",
+   "alt_key": "justt|product analyst|tel aviv",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Senior Data Analyst",
+   "company": "365scores",
+   "source": "365scores",
+   "location": "Tel Aviv-Yafo, Israel",
+   "experience": "3 years experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying, Looker, Python, Data Warehouse, BigQuery",
+   "url": "https://www.comeet.com/jobs/365scores/B3.006/senior-data-analyst/BC.A60",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://comeet.com/jobs/365scores/B3.006/senior-data-analyst/BC.A60",
+   "alt_key": "365scores|senior data analyst|tel aviv",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -45,23 +221,39 @@
    "key": "https://www.linkedin.com/jobs/view/4490301625",
    "alt_key": "wix|ai analyst|tel aviv",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
-   "title": "Data Insights & Analytics Lead",
-   "company": "Lumenis",
-   "source": "Lumenis",
+   "title": "Business Analyst",
+   "company": "PAPAYA",
+   "source": "PAPAYA",
    "location": "Tel Aviv-Yafo, Israel",
-   "experience": "",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Power BI, Qlik, Python",
-   "url": "https://www.comeet.com/jobs/lumenis/A1.00C/data-insights--analytics-lead/66.374",
+   "experience": "4 years of experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying, Tableau, Looker, Python, Pandas",
+   "url": "https://www.comeet.com/jobs/papayagaming/46.00B/business-analyst/3A.473",
    "date_display": "25/11/2026",
    "date_iso": "2026-11-25",
-   "key": "https://comeet.com/jobs/lumenis/A1.00C/data-insights--analytics-lead/66.374",
-   "alt_key": "lumenis|data insights analytics lead|tel aviv",
-   "first_seen": "2026-10-01",
-   "last_seen": "2026-11-25",
+   "key": "https://comeet.com/jobs/papayagaming/46.00B/business-analyst/3A.473",
+   "alt_key": "papaya|business analyst|tel aviv",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-26",
+   "company_type": "הייטק"
+  },
+  {
+   "title": "Data Analyst",
+   "company": "Global-e",
+   "source": "Global-e",
+   "location": "Petah-Tikva, Israel",
+   "experience": "2+ years of experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Qlik",
+   "url": "https://www.comeet.com/jobs/global-e/62.002/data-analyst/10.379",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://comeet.com/jobs/global-e/62.002/data-analyst/10.379",
+   "alt_key": "globale|data analyst|petah tikva",
+   "first_seen": "2026-09-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -93,7 +285,7 @@
    "key": "https://job-boards.greenhouse.io/bringg/jobs/8960030002",
    "alt_key": "bringg|global hr operations manager c b hris analytics|tlv",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -109,7 +301,7 @@
    "key": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5044377101",
    "alt_key": "tripledotstudios|senior product analyst|tel aviv",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -141,71 +333,7 @@
    "key": "https://www.linkedin.com/jobs/view/4477255773",
    "alt_key": "appsflyer|data analyst|herzliya",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Operations Analyst",
-   "company": "Mize",
-   "source": "Mize",
-   "location": "Tel Aviv-Yafo, Israel",
-   "experience": "2+ years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL",
-   "url": "https://www.comeet.com/jobs/mize/88.000/operations-analyst/5B.558",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://comeet.com/jobs/mize/88.000/operations-analyst/5B.558",
-   "alt_key": "mize|operations analyst|tel aviv",
-   "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Product Analyst",
-   "company": "Justt",
-   "source": "Justt",
-   "location": "Tel Aviv-Jaffa, Israel",
-   "experience": "3+ years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Python, Data Warehouse, Snowflake",
-   "url": "https://www.comeet.com/jobs/justt/36.001/product-analyst/33.57D",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://comeet.com/jobs/justt/36.001/product-analyst/33.57D",
-   "alt_key": "justt|product analyst|tel aviv",
-   "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Senior Data Analyst",
-   "company": "365scores",
-   "source": "365scores",
-   "location": "Tel Aviv-Yafo, Israel",
-   "experience": "3 years experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying, Looker, Python, Data Warehouse, BigQuery",
-   "url": "https://www.comeet.com/jobs/365scores/B3.006/senior-data-analyst/BC.A60",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://comeet.com/jobs/365scores/B3.006/senior-data-analyst/BC.A60",
-   "alt_key": "365scores|senior data analyst|tel aviv",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Business Analyst",
-   "company": "PAPAYA",
-   "source": "PAPAYA",
-   "location": "Tel Aviv-Yafo, Israel",
-   "experience": "4 years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying, Tableau, Looker, Python, Pandas",
-   "url": "https://www.comeet.com/jobs/papayagaming/46.00B/business-analyst/3A.473",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://comeet.com/jobs/papayagaming/46.00B/business-analyst/3A.473",
-   "alt_key": "papaya|business analyst|tel aviv",
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -226,22 +354,6 @@
   },
   {
    "title": "Data Analyst",
-   "company": "Global-e",
-   "source": "Global-e",
-   "location": "Petah-Tikva, Israel",
-   "experience": "2+ years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Qlik",
-   "url": "https://www.comeet.com/jobs/global-e/62.002/data-analyst/10.379",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://comeet.com/jobs/global-e/62.002/data-analyst/10.379",
-   "alt_key": "globale|data analyst|petah tikva",
-   "first_seen": "2026-09-25",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Data Analyst",
    "company": "Dialog",
    "source": "LinkedIn",
    "location": "Center District, Israel",
@@ -253,7 +365,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492399112",
    "alt_key": "dialog|data analyst|center",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -269,7 +381,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493569510",
    "alt_key": "outlookamusements|data analytics team lead|center",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -285,7 +397,7 @@
    "key": "https://job-boards.greenhouse.io/outlookamusements/jobs/8213832003",
    "alt_key": "outlookamusements|data analytics team lead|petach tikva",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -321,22 +433,6 @@
    "company_type": "הייטק"
   },
   {
-   "title": "דרוש /ה Senior BI & Analytics Specialist",
-   "company": "One DatAI",
-   "source": "AllJobs",
-   "location": "שוהם",
-   "experience": "3 שנות ניסיון ב-Tableau- לפחות שנ",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Python, DWH",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8856435",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8856435",
-   "alt_key": "onedatai|דרוש ה senior bi analytics specialist|שוהם",
-   "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
    "title": "Intelligence Analyst",
    "company": "Paragon",
    "source": "LinkedIn",
@@ -349,7 +445,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490315515",
    "alt_key": "paragon|intelligence analyst|tel aviv",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -365,7 +461,7 @@
    "key": "https://www.linkedin.com/jobs/view/4464507310",
    "alt_key": "paragon|fp a analyst|tel aviv",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -381,7 +477,7 @@
    "key": "https://comeet.com/jobs/sunflower/AA.009/business-analyst/01.F5D",
    "alt_key": "sunflower|business analyst|tel aviv",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -397,7 +493,7 @@
    "key": "https://www.linkedin.com/jobs/view/4471324932",
    "alt_key": "arpeely|product data analyst|tel aviv",
    "first_seen": "2026-09-29",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -413,7 +509,7 @@
    "key": "https://comeet.com/jobs/play_perfect/69.001/fraud-analyst/14.A44",
    "alt_key": "playperfect|fraud analyst|tel aviv",
    "first_seen": "2026-09-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -445,23 +541,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492365220",
    "alt_key": "kla|operations data analyst|center",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Senior BI & Analytics Specialist",
-   "company": "Aqurate Data",
-   "source": "LinkedIn",
-   "location": "Shoham, Center District, Israel",
-   "experience": "ניסיון של 5 שנים לפחות בפיתוח דשבורד",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Python, DWH",
-   "url": "https://www.linkedin.com/jobs/view/4493366812",
-   "date_display": "22/11/2026",
-   "date_iso": "2026-11-22",
-   "key": "https://www.linkedin.com/jobs/view/4493366812",
-   "alt_key": "aquratedata|senior bi analytics specialist|shoham",
-   "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -477,7 +557,7 @@
    "key": "https://www.linkedin.com/jobs/view/4485957022",
    "alt_key": "forter|decision analyst|tel aviv",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -509,7 +589,7 @@
    "key": "https://comeet.com/jobs/guardio/57.000/growth-analyst/75.57C",
    "alt_key": "guardio|growth analyst|tel aviv",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -541,7 +621,7 @@
    "key": "https://www.linkedin.com/jobs/view/4346873234",
    "alt_key": "modellama|research analyst|center",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -573,7 +653,7 @@
    "key": "https://www.linkedin.com/jobs/view/4467842313",
    "alt_key": "veevacrossix|data analyst pioneer|kiryat ono",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -621,7 +701,7 @@
    "key": "https://www.linkedin.com/jobs/view/4484982976",
    "alt_key": "melio|senior data analyst|tel aviv",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -685,7 +765,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492142287",
    "alt_key": "realplay|founding economy analytics manager|tel aviv",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -701,7 +781,7 @@
    "key": "https://www.linkedin.com/jobs/view/4466181966",
    "alt_key": "nexxen|fp a analyst|tel aviv",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -717,7 +797,7 @@
    "key": "https://www.linkedin.com/jobs/view/4491607186",
    "alt_key": "marvelltechnology|associate project analyst professional student position|petah tikva",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -765,7 +845,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492078620",
    "alt_key": "lusha|senior business analyst|tel aviv",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -781,7 +861,7 @@
    "key": "https://www.linkedin.com/jobs/view/4486871242",
    "alt_key": "drsrada|junior data analyst|netanya",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -797,7 +877,7 @@
    "key": "https://www.linkedin.com/jobs/view/4491121690",
    "alt_key": "expressvpn|senior business analyst user acquisition growth|tel aviv",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -845,7 +925,7 @@
    "key": "https://www.linkedin.com/jobs/view/4491126524",
    "alt_key": "cloudzone|cloud finops analyst|tel aviv",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -877,7 +957,7 @@
    "key": "https://comeet.com/jobs/thetaray/72.00F/bi--data-analyst-student/3F.475",
    "alt_key": "thetaray|bi data analyst student|hod hasharon",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -925,7 +1005,7 @@
    "key": "https://www.linkedin.com/jobs/view/4408239691",
    "alt_key": "similarweb|big data analyst|tel aviv",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -941,7 +1021,7 @@
    "key": "https://www.linkedin.com/jobs/view/4465725485",
    "alt_key": "appsflyer|commission analyst|herzliya",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -957,7 +1037,7 @@
    "key": "https://www.linkedin.com/jobs/view/4364671319",
    "alt_key": "similarweb|product analyst|tel aviv",
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -989,7 +1069,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490909634",
    "alt_key": "biscience|junior data analyst|tel aviv",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1005,7 +1085,7 @@
    "key": "https://www.linkedin.com/jobs/view/4491515197",
    "alt_key": "extreme|bi implementation specialist|center",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1037,7 +1117,7 @@
    "key": "https://www.linkedin.com/jobs/view/4447017590",
    "alt_key": "moonactive|business data analyst|tel aviv",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1069,7 +1149,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490228120",
    "alt_key": "human|cyber security data analyst|tel aviv",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1085,7 +1165,7 @@
    "key": "https://www.linkedin.com/jobs/view/4489396191",
    "alt_key": "investingcom|head of analytics|tel aviv",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1101,7 +1181,7 @@
    "key": "https://drushim.co.il/job/39098279/211e47ef",
    "alt_key": "yad2|senior data analyst|פתח תקווה",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1133,7 +1213,7 @@
    "key": "https://www.linkedin.com/jobs/view/4484390972",
    "alt_key": "claroty|security data analyst|tel aviv",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1149,7 +1229,7 @@
    "key": "https://www.linkedin.com/jobs/view/4428612794",
    "alt_key": "modellama|data analyst|raanana",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1197,7 +1277,7 @@
    "key": "https://www.linkedin.com/jobs/view/4488917482",
    "alt_key": "clarotyforhealthcare|security data analyst|israel",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1245,7 +1325,7 @@
    "key": "https://www.linkedin.com/jobs/view/4489995303",
    "alt_key": "gong|senior product analyst|tel aviv",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1293,7 +1373,7 @@
    "key": "https://job-boards.greenhouse.io/gongio/jobs/4728203006",
    "alt_key": "gongio|senior product analyst|tel aviv",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1325,7 +1405,7 @@
    "key": "https://www.linkedin.com/jobs/view/4489645231",
    "alt_key": "canonical|manager people analytics|tel aviv",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1373,7 +1453,7 @@
    "key": "https://www.linkedin.com/jobs/view/4488853561",
    "alt_key": "ltxio|commercial operations analyst|tel aviv",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1389,7 +1469,7 @@
    "key": "https://www.linkedin.com/jobs/view/4488852717",
    "alt_key": "canonical|director talent analytics|tel aviv",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "הייטק"
   },
   {
@@ -1489,118 +1569,6 @@
    "company_type": "הייטק"
   },
   {
-   "title": "Validation Analytics Tools Developer",
-   "company": "Mobileye",
-   "source": "Lever",
-   "location": "Ramat Gan, Israel",
-   "experience": "3–5 years",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Python, Pandas",
-   "url": "https://jobs.eu.lever.co/mobileye/28d00939-d06e-4f6d-84aa-4f155fe88b62",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://jobs.eu.lever.co/mobileye/28d00939-d06e-4f6d-84aa-4f155fe88b62",
-   "alt_key": "mobileye|validation analytics tools developer|ramat gan",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-08",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Sr Data Analyst",
-   "company": "Palo Alto Networks",
-   "source": "LinkedIn",
-   "location": "Petah Tikva, Center District, Israel",
-   "experience": "Minimum of 5+ years",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Python",
-   "url": "https://www.linkedin.com/jobs/view/4469320353",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4469320353",
-   "alt_key": "paloaltonetworks|sr data analyst|petah tikva",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-25",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Business Analyst",
-   "company": "Shavit Software",
-   "source": "LinkedIn",
-   "location": "Ramat Gan, Tel Aviv District, Israel",
-   "experience": "2 years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI, Qlik, Data Warehouse, Snowflake",
-   "url": "https://www.linkedin.com/jobs/view/4487718846",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4487718846",
-   "alt_key": "shavitsoftware|business analyst|ramat gan",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-15",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Sales Operations Analyst, AWS Israel ENT & PS",
-   "company": "Amazon Web Services (AWS)",
-   "source": "LinkedIn",
-   "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-   "experience": "4+ years",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: Data Warehouse",
-   "url": "https://www.linkedin.com/jobs/view/4488030288",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4488030288",
-   "alt_key": "amazonwebservicesaws|sales operations analyst aws israel ent ps|tel aviv",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-08",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Game Economist - POP! Slots",
-   "company": "PLAYSTUDIOS",
-   "source": "LinkedIn",
-   "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-   "experience": "3 years of work experience",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL",
-   "url": "https://www.linkedin.com/jobs/view/4469328117",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4469328117",
-   "alt_key": "playstudios|game economist pop slots|tel aviv",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Senior Competitive Intelligence Analyst",
-   "company": "Filigran",
-   "source": "LinkedIn",
-   "location": "Israel",
-   "experience": "",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Tableau, Power BI",
-   "url": "https://www.linkedin.com/jobs/view/4476666643",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4476666643",
-   "alt_key": "filigran|senior competitive intelligence analyst|israel",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-17",
-   "company_type": "הייטק"
-  },
-  {
-   "title": "Forward Deployed Data Arhitect",
-   "company": "Stealth AI Startup",
-   "source": "LinkedIn",
-   "location": "Tel Aviv District, Israel",
-   "experience": "8+ years",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Tableau, Power BI, Looker, BigQuery, Snowflake, Redshift",
-   "url": "https://www.linkedin.com/jobs/view/4485853547",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://www.linkedin.com/jobs/view/4485853547",
-   "alt_key": "stealthaistartup|forward deployed data arhitect|tel aviv",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-09",
-   "company_type": "הייטק"
-  },
-  {
    "title": "Data Analyst We’re looking for an experienced and versatile BI Data Analyst to join our BI & Analytics team.... BI & Analytics IL, Netanya",
    "company": "Bright Data",
    "source": "brightdata.com",
@@ -1629,8 +1597,104 @@
    "key": "https://www.linkedin.com/jobs/view/4489989676",
    "alt_key": "onezerobank|secops ir analyst|tel aviv",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "בנקים"
+  },
+  {
+   "title": "אנליסט.ית ניהול ופיתוח אשראי צרכני לחברת Cal",
+   "company": "Cal כרטיסי אשראי לישראל",
+   "source": "AllJobs",
+   "location": "בני ברק",
+   "experience": "",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8817827",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8817827",
+   "alt_key": "calכרטיסיאשראילישראל|אנליסט ית ניהול ופיתוח אשראי צרכני לחברת cal|בני ברק",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
+  },
+  {
+   "title": "Senior FP A Analyst",
+   "company": "Nextage",
+   "source": "AllJobs",
+   "location": "רעננה",
+   "experience": "ניסיון של 4 שנים לפחות כאנליסט/ית FP",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8825692",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8825692",
+   "alt_key": "nextage|senior fp a analyst|רעננה",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
+  },
+  {
+   "title": "דאטה אנליסט.ית",
+   "company": "מנורה מבטחים ביטוח",
+   "source": "JobMaster",
+   "location": "ישראל",
+   "experience": "ניסיון של 2+ שנים בתפקיד אנליטי",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Power BI, Python; ישראל הוסקה מההקשר",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9921690",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9921690",
+   "alt_key": "מנורהמבטחיםביטוח|דאטה אנליסט ית|ישראל",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
+  },
+  {
+   "title": "Economist JB-26799",
+   "company": "Cal (Israel Credit Cards)",
+   "source": "LinkedIn",
+   "location": "Bnei Brak, Tel Aviv District, Israel",
+   "experience": "2+ years of experience",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Database",
+   "url": "https://www.linkedin.com/jobs/view/4490345472",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4490345472",
+   "alt_key": "calcreditcards|economist jb 26799|bnei brak",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
+  },
+  {
+   "title": "אנליסט.ית חדר מבצעים לחברת Cal- משרה זמנית",
+   "company": "חברת Cal",
+   "source": "JobMaster",
+   "location": "בני ברק",
+   "experience": "ניסיון של שנתיים בתחום כולל עבודה עם SQL",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Querying (שאילתות)",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9918643",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9918643",
+   "alt_key": "חברתcal|אנליסט ית חדר מבצעים לחברת cal משרה זמנית|בני ברק",
+   "first_seen": "2026-11-10",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
+  },
+  {
+   "title": "אנליסט/ית שיווק לחברת ביטוח מובילה!",
+   "company": "ביטוח ישיר איי די איי",
+   "source": "JobMaster",
+   "location": "פתח תקווה",
+   "experience": "",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9865030",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9865030",
+   "alt_key": "ביטוחישיראיידיאיי|אנליסט ית שיווק לחברת ביטוח מובילה|פתח תקווה",
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-11-26",
+   "company_type": "ביטוח ופיננסים"
   },
   {
    "title": "אנליסט/ית ביקורת נתונים החלפה לחל\"ד",
@@ -1649,54 +1713,6 @@
    "company_type": "ביטוח ופיננסים"
   },
   {
-   "title": "דאטה אנליסט.ית",
-   "company": "מנורה מבטחים ביטוח",
-   "source": "JobMaster",
-   "location": "ישראל",
-   "experience": "ניסיון של 2+ שנים בתפקיד אנליטי",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Power BI, Python; ישראל הוסקה מההקשר",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9921690",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9921690",
-   "alt_key": "מנורהמבטחיםביטוח|דאטה אנליסט ית|ישראל",
-   "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
-   "title": "אנליסט.ית חדר מבצעים לחברת Cal- משרה זמנית",
-   "company": "חברת Cal",
-   "source": "JobMaster",
-   "location": "בני ברק",
-   "experience": "ניסיון של שנתיים בתחום כולל עבודה עם SQL",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau, Querying (שאילתות)",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9918643",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9918643",
-   "alt_key": "חברתcal|אנליסט ית חדר מבצעים לחברת cal משרה זמנית|בני ברק",
-   "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
-   "title": "אנליסט/ית שיווק לחברת ביטוח מובילה!",
-   "company": "ביטוח ישיר איי די איי",
-   "source": "JobMaster",
-   "location": "פתח תקווה",
-   "experience": "",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9865030",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9865030",
-   "alt_key": "ביטוחישיראיידיאיי|אנליסט ית שיווק לחברת ביטוח מובילה|פתח תקווה",
-   "first_seen": "2026-10-03",
-   "last_seen": "2026-11-25",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
    "title": "אנליסט/ית נתונים ומיישם מערכת CRM",
    "company": "מגדל ביטוח ופיננסים",
    "source": "Drushim",
@@ -1709,7 +1725,7 @@
    "key": "https://drushim.co.il/job/38493566/34b81301",
    "alt_key": "מגדלביטוחופיננסים|אנליסט ית נתונים ומיישם מערכת crm|פתח תקווה",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1725,7 +1741,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492399046",
    "alt_key": "calcreditcards|data analyst temporary position jb 26086|bnei brak",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1741,23 +1757,7 @@
    "key": "https://drushim.co.il/job/38982664/066b635a",
    "alt_key": "מגדלביטוחופיננסים|אנליסט ית שכר ו hr|פתח תקווה",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-25",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
-   "title": "אנליסט.ית ניהול ופיתוח אשראי צרכני לחברת Cal",
-   "company": "Cal כרטיסי אשראי לישראל",
-   "source": "AllJobs",
-   "location": "בני ברק",
-   "experience": "",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Tableau",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8817827",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8817827",
-   "alt_key": "calכרטיסיאשראילישראל|אנליסט ית ניהול ופיתוח אשראי צרכני לחברת cal|בני ברק",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1774,22 +1774,6 @@
    "alt_key": "מגדלביטוחופיננסים|אנליסט ית תגמול hris ו people analytics|תל אביב",
    "first_seen": "2026-09-26",
    "last_seen": "2026-11-24",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
-   "title": "Senior FP A Analyst",
-   "company": "Nextage",
-   "source": "AllJobs",
-   "location": "רעננה",
-   "experience": "ניסיון של 4 שנים לפחות כאנליסט/ית FP",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8825692",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8825692",
-   "alt_key": "nextage|senior fp a analyst|רעננה",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1821,7 +1805,7 @@
    "key": "https://www.linkedin.com/jobs/view/4494363861",
    "alt_key": "cover|business data analyst|petah tikva",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1837,7 +1821,7 @@
    "key": "https://www.linkedin.com/jobs/view/4477170279",
    "alt_key": "ice|analyst trading operations|tel aviv",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1853,7 +1837,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490428672",
    "alt_key": "avatrade|vp data analytics|herzliya",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1885,7 +1869,7 @@
    "key": "https://www.linkedin.com/jobs/view/4383696007",
    "alt_key": "nextage|senior financial planning analyst 3113|raanana",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1901,7 +1885,7 @@
    "key": "https://drushim.co.il/job/39036795/eceba902",
    "alt_key": "cal|אנליסט ית חדר מבצעים לחברת cal משרה זמנית|בני ברק",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1917,7 +1901,7 @@
    "key": "https://www.linkedin.com/jobs/view/4489551823",
    "alt_key": "bridgewise|funds etf expert analyst|ramat gan",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1933,23 +1917,7 @@
    "key": "https://www.linkedin.com/jobs/view/4489548873",
    "alt_key": "bridgewise|investment strategy analyst|ramat gan",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-25",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
-   "title": "Economist JB-26799",
-   "company": "Cal (Israel Credit Cards)",
-   "source": "LinkedIn",
-   "location": "Bnei Brak, Tel Aviv District, Israel",
-   "experience": "2+ years of experience",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Database",
-   "url": "https://www.linkedin.com/jobs/view/4490345472",
-   "date_display": "12/11/2026",
-   "date_iso": "2026-11-12",
-   "key": "https://www.linkedin.com/jobs/view/4490345472",
-   "alt_key": "calcreditcards|economist jb 26799|bnei brak",
-   "first_seen": "2026-11-13",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -1965,7 +1933,7 @@
    "key": "https://drushim.co.il/job/39074586/417f7970",
    "alt_key": "מנורהמבטחים|אנליסט ית התחזויות ניהול זהויות וממשל הרשאות|רמת גן",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ביטוח ופיננסים"
   },
   {
@@ -2017,22 +1985,6 @@
    "company_type": "ביטוח ופיננסים"
   },
   {
-   "title": "Data Analyst להראל ביטוח ופיננסים!",
-   "company": "הראל ביטוח ופיננסים",
-   "source": "Drushim",
-   "location": "רמת גן",
-   "experience": "1-2 שנים",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Python, Database (מסד/בסיס נתונים)",
-   "url": "https://www.drushim.co.il/job/38389066/64bb41b6/",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://drushim.co.il/job/38389066/64bb41b6",
-   "alt_key": "הראלביטוחופיננסים|data analyst להראל ביטוח ופיננסים|רמת גן",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-10",
-   "company_type": "ביטוח ופיננסים"
-  },
-  {
    "title": "לאגף ארגון ושיטות Data Analyst",
    "company": "הראל ביטוח ופיננסים",
    "source": "adamtotal.co.il",
@@ -2061,7 +2013,7 @@
    "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9921880",
    "alt_key": "gness|clinical it business analyst|נתניה",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2077,7 +2029,7 @@
    "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9846448",
    "alt_key": "gness|אנליסט ית מלאי ובקרה|חולון",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2093,7 +2045,7 @@
    "key": "https://comeet.com/jobs/matrix-ifs/19.00F/aml-business-analyst/83.47D",
    "alt_key": "matrixglobal|aml business analyst|us",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2109,7 +2061,7 @@
    "key": "https://drushim.co.il/job/39168370/21d449b9",
    "alt_key": "gstat|data analyst|תל אביב",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2125,7 +2077,7 @@
    "key": "https://drushim.co.il/job/38958154/96f70622",
    "alt_key": "gstat|סטודנט ית לתפקיד אנליסט ית מתחיל ה|בני ברק",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2141,7 +2093,7 @@
    "key": "https://drushim.co.il/job/38612639/fd70121d",
    "alt_key": "gstat|data analyst|בני ברק",
    "first_seen": "2026-10-05",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2157,7 +2109,7 @@
    "key": "https://drushim.co.il/job/38978427/6efbb25f",
    "alt_key": "קבוצתaman|אנליסט ית נתונים|לוד",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2173,7 +2125,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493197451",
    "alt_key": "gstat|analyst model developer|center",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2189,7 +2141,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493186842",
    "alt_key": "gstat|marketing analyst|center",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2205,7 +2157,7 @@
    "key": "https://www.linkedin.com/jobs/view/4491727887",
    "alt_key": "practicalvision|junior web analyst|tel aviv",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2221,7 +2173,7 @@
    "key": "https://drushim.co.il/job/39069684/04e479c1",
    "alt_key": "gstat|אנליסט ית ניהול פיננסי|תל אביב",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2237,7 +2189,7 @@
    "key": "https://drushim.co.il/job/38827187/9bc735bc",
    "alt_key": "קבוצתיעל|אנליסט ית soc tier 2|פתח תקווה",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2253,7 +2205,7 @@
    "key": "https://drushim.co.il/job/38497670/21acf914",
    "alt_key": "קבוצתיעל|דאטה אנליסט ית אשראי|בני ברק",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2269,7 +2221,7 @@
    "key": "https://drushim.co.il/job/38925968/b8bbdf0a",
    "alt_key": "logicait|דרוש ה מיישם ת bi qlik sense|תל אביב",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2285,7 +2237,7 @@
    "key": "https://drushim.co.il/job/38728767/70265e90",
    "alt_key": "qualityai|24185 clinical business analyst|נתניה",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2365,7 +2317,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490226901",
    "alt_key": "gstat|data analyst|center",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2429,7 +2381,7 @@
    "key": "https://www.linkedin.com/jobs/view/4484441528",
    "alt_key": "qualityai|24185 clinical business analyst|netanya",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2477,7 +2429,7 @@
    "key": "https://matrix.co.il/jobs/משרות/%d7%a0%d7%99%d7%aa%d7%95%d7%97-%d7%9e%d7%a2%d7%a8%d7%9b%d7%95%d7%aa",
    "alt_key": "מטריקסמשרות|ניתוח מערכות מידע business analyst|ישראל",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2541,7 +2493,7 @@
    "key": "https://tasc-consulting.com/career-path/data-ai",
    "alt_key": "tascconsultingcapital|data ai|לא ידוע דורש אימות",
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2557,7 +2509,7 @@
    "key": "https://tasc-consulting.com/careers/data-strategy-consultant",
    "alt_key": "tascconsultingcapital|data strategy consultant junior position|לא ידוע דורש אימות",
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2573,7 +2525,7 @@
    "key": "https://tasc-consulting.com/careers/senior-data-specialist",
    "alt_key": "tascconsultingcapital|data associate|לא ידוע דורש אימות",
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
   },
   {
@@ -2621,8 +2573,24 @@
    "key": "https://careers.eladsoft.com/jobs/1006346",
    "alt_key": "אלעדקריירה|head of data analytics|לא ידוע דורש אימות",
    "first_seen": "2026-09-25",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-26",
    "company_type": "ייעוץ ושירותי IT"
+  },
+  {
+   "title": "כלכלן.ית /רכז.ת תאגיד בריאות לג\"פים",
+   "company": "המרכז הרפואי תל אביב (איכילוב)",
+   "source": "AllJobs",
+   "location": "תל אביב יפו",
+   "experience": "ניסיון של שנה-שנתיים ככלכלנ",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8881852",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8881852",
+   "alt_key": "המרכזהרפואיתלאביבאיכילוב|כלכלן ית רכז ת תאגיד בריאות לגפים|תל אביב",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-26",
+   "company_type": "בריאות ופארמה"
   },
   {
    "title": "אנליסט/ית  בכיר/ה",
@@ -2637,7 +2605,7 @@
    "key": "https://drushim.co.il/job/39194742/61d27187",
    "alt_key": "כלליתמושלם|אנליסט ית בכיר ה|רמת גן",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "בריאות ופארמה"
   },
   {
@@ -2653,23 +2621,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493622463",
    "alt_key": "tevapharmaceuticals|systems business intelligence analyst maternity leave cover|tel aviv",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "company_type": "בריאות ופארמה"
-  },
-  {
-   "title": "כלכלן.ית /רכז.ת תאגיד בריאות לג\"פים",
-   "company": "המרכז הרפואי תל אביב (איכילוב)",
-   "source": "AllJobs",
-   "location": "תל אביב יפו",
-   "experience": "ניסיון של שנה-שנתיים ככלכלנ",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8881852",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8881852",
-   "alt_key": "המרכזהרפואיתלאביבאיכילוב|כלכלן ית רכז ת תאגיד בריאות לגפים|תל אביב",
-   "first_seen": "2026-11-04",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "בריאות ופארמה"
   },
   {
@@ -2701,7 +2653,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493733502",
    "alt_key": "partner|analyst 2866|rosh haayin",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תקשורת ומדיה"
   },
   {
@@ -2717,7 +2669,7 @@
    "key": "https://drushim.co.il/job/39139091/275dec78",
    "alt_key": "partner|אנליסט ית עסקי ת לחטיבת השיווק|ראש העין",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תקשורת ומדיה"
   },
   {
@@ -2733,7 +2685,7 @@
    "key": "https://www.linkedin.com/jobs/view/4488681554",
    "alt_key": "sidelines|partnerships project analyst|tel aviv",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תקשורת ומדיה"
   },
   {
@@ -2749,7 +2701,7 @@
    "key": "https://www.linkedin.com/jobs/view/4487470376",
    "alt_key": "bringiton|senior data analyst gaming|israel",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תקשורת ומדיה"
   },
   {
@@ -2760,12 +2712,28 @@
    "experience": "2-4 years",
    "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
    "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9931393",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
    "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9931393",
    "alt_key": "קבוצתשטראוס|fp a analyst strauss coffee international|פתח תקווה",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
+   "company_type": "קמעונאות ומוצרי צריכה"
+  },
+  {
+   "title": "Sodastream:  Senior Commercial Analyst",
+   "company": "PepsiCo",
+   "source": "LinkedIn",
+   "location": "Kfar Saba, Center District, Israel",
+   "experience": "3-5+ years",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.linkedin.com/jobs/view/4493004584",
+   "date_display": "24/11/2026",
+   "date_iso": "2026-11-24",
+   "key": "https://www.linkedin.com/jobs/view/4493004584",
+   "alt_key": "pepsico|sodastream senior commercial analyst|kfar saba",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2781,7 +2749,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493188933",
    "alt_key": "pango|business data analyst|petah tikva",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2797,7 +2765,7 @@
    "key": "https://drushim.co.il/job/38949870/1cc4315f",
    "alt_key": "סופרפארם|דרוש ה אנליסט ית בתחום השיווק|הרצליה",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2829,7 +2797,7 @@
    "key": "https://www.linkedin.com/jobs/view/4492776743",
    "alt_key": "reckitt|trade marketing analyst maternity cover|hod hasharon",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2845,7 +2813,7 @@
    "key": "https://www.linkedin.com/jobs/view/4490882711",
    "alt_key": "strausscoffeebv|financial planning analyst|petah tikva",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2861,7 +2829,7 @@
    "key": "https://drushim.co.il/job/38421765/446cb8d4",
    "alt_key": "factory54|אנליסט ית מסחרי ת|תל אביב",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2877,7 +2845,7 @@
    "key": "https://www.linkedin.com/jobs/view/4480093485",
    "alt_key": "pepsico|sodastream analytics insights analyst|kfar saba",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2893,7 +2861,7 @@
    "key": "https://www.linkedin.com/jobs/view/4451777218",
    "alt_key": "pepsico|sodastream fp a analyst|kfar saba",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
@@ -2913,6 +2881,38 @@
    "company_type": "קמעונאות ומוצרי צריכה"
   },
   {
+   "title": "PMO – AI Data Center",
+   "company": "Enlight Renewable Energy Ltd (ENLT)",
+   "source": "LinkedIn",
+   "location": "Rosh HaAyin, Center District, Israel",
+   "experience": "7 years of overall experience",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.linkedin.com/jobs/view/4494621878",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4494621878",
+   "alt_key": "enlightrenewableenergyenlt|pmo ai data center|rosh haayin",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "תעשייה ביטחון ואנרגיה"
+  },
+  {
+   "title": "PMO – AI Data Center",
+   "company": "Enlight",
+   "source": "Enlight",
+   "location": "Rosh Haayin, Israel",
+   "experience": "7 years of overall experience",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.comeet.com/jobs/enlightenergy/99.006/pmo--ai-data-center/AE.470",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://comeet.com/jobs/enlightenergy/99.006/pmo--ai-data-center/AE.470",
+   "alt_key": "enlight|pmo ai data center|rosh haayin",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-26",
+   "company_type": "תעשייה ביטחון ואנרגיה"
+  },
+  {
    "title": "Principal Business Intelligence & Product Operation",
    "company": "Thales",
    "source": "LinkedIn",
@@ -2925,7 +2925,7 @@
    "key": "https://www.linkedin.com/jobs/view/4449648769",
    "alt_key": "thales|principal business intelligence product operation|tel aviv",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תעשייה ביטחון ואנרגיה"
   },
   {
@@ -2941,7 +2941,7 @@
    "key": "https://drushim.co.il/job/38951827/aef7b744",
    "alt_key": "אמישראגזenergy|כלכלן ית|תל אביב",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תעשייה ביטחון ואנרגיה"
   },
   {
@@ -2973,23 +2973,7 @@
    "key": "https://drushim.co.il/job/38950630/ba97aa30",
    "alt_key": "אמישראגזenergy|כלכלן ית עם תנאים מעולים|תל אביב",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
-   "company_type": "תעשייה ביטחון ואנרגיה"
-  },
-  {
-   "title": "PMO – AI Data Center",
-   "company": "Enlight",
-   "source": "Enlight",
-   "location": "Rosh Haayin, Israel",
-   "experience": "",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Power BI",
-   "url": "https://www.comeet.com/jobs/enlightenergy/99.006/pmo--ai-data-center/AE.470",
-   "date_display": "08/11/2026",
-   "date_iso": "2026-11-08",
-   "key": "https://comeet.com/jobs/enlightenergy/99.006/pmo--ai-data-center/AE.470",
-   "alt_key": "enlight|pmo ai data center|rosh haayin",
-   "first_seen": "2026-11-09",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-26",
    "company_type": "תעשייה ביטחון ואנרגיה"
   },
   {
@@ -3021,8 +3005,72 @@
    "key": "https://comeet.com/jobs/enlightenergy/99.006/performance-data-analyst/FB.373",
    "alt_key": "enlight|performance data analyst|rosh haayin",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "תעשייה ביטחון ואנרגיה"
+  },
+  {
+   "title": "ANALYST SOC TIER 2",
+   "company": "עוז תוכנה בע\"מ",
+   "source": "AllJobs",
+   "location": "פתח תקווה",
+   "experience": "ניסיון של 2-3 שנים לפחות בתחום אבטחת",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Python, Querying (שאילתות)",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8909985",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8909985",
+   "alt_key": "עוזתוכנה|analyst soc tier 2|פתח תקווה",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
+  },
+  {
+   "title": "דאטה אנליסט",
+   "company": "חברת דואר ישראל בע\"מ",
+   "source": "JobMaster",
+   "location": "מודיעין מכבים רעות",
+   "experience": "ניסיון של 3 שנים לפחות בתפקיד דאטה א",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying (שאילתות)",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9839966",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9839966",
+   "alt_key": "חברתדוארישראל|דאטה אנליסט|מודיעין",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
+  },
+  {
+   "title": "כלכלן.ית למפעל בקיסריה",
+   "company": "Job-time",
+   "source": "Drushim",
+   "location": "חדרה",
+   "experience": "3-4 שנים",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Qlik",
+   "url": "https://www.drushim.co.il/job/39206636/d7760c18/",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://drushim.co.il/job/39206636/d7760c18",
+   "alt_key": "jobtime|כלכלן ית למפעל בקיסריה|חדרה",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
+  },
+  {
+   "title": "אנליסט/ית ניהול פיננסי",
+   "company": "קומבלק איי.טי. בע\"מ",
+   "source": "JobMaster",
+   "location": "שוהם",
+   "experience": "",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, DWH, Database (מסד/בסיס נתונים), Data Warehouse (מחסן נתונים), Querying (שאילתות)",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9932714",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9932714",
+   "alt_key": "קומבלקאייטי|אנליסט ית ניהול פיננסי|שוהם",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
   },
   {
    "title": "data Analyst",
@@ -3037,23 +3085,55 @@
    "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8914853",
    "alt_key": "ריקרוטיקס|data analyst|רמת השרון",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
-   "title": "דאטה אנליסט",
-   "company": "חברת דואר ישראל בע\"מ",
-   "source": "JobMaster",
-   "location": "מודיעין מכבים רעות",
-   "experience": "ניסיון של 3 שנים לפחות בתפקיד דאטה א",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Querying (שאילתות)",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9839966",
+   "title": "הייטקזון מגייסת אנליסט /ית שישנה את המשחק!",
+   "company": "הייטקזון",
+   "source": "AllJobs",
+   "location": "כפר סבא ו רעננה",
+   "experience": "ניסיון של שנתיים לפחות בתחום אנליזה שימוש",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8891334",
    "date_display": "25/11/2026",
    "date_iso": "2026-11-25",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9839966",
-   "alt_key": "חברתדוארישראל|דאטה אנליסט|מודיעין",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8891334",
+   "alt_key": "הייטקזון|הייטקזון מגייסת אנליסט ית שישנה את המשחק|כפר סבא",
+   "first_seen": "2026-11-10",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
+  },
+  {
+   "title": "מנהל /ת פרויקטים /אנליסט /ית שרשרת אספקה -",
+   "company": "ישומים  לבכירים",
+   "source": "AllJobs",
+   "location": "רמת ישי",
+   "experience": "ניסיון של לפחות 3 שנים בניהול פרויקטי",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8879938",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8879938",
+   "alt_key": "ישומיםלבכירים|מנהל ת פרויקטים אנליסט ית שרשרת אספקה|רמת",
+   "first_seen": "2026-11-03",
+   "last_seen": "2026-11-26",
+   "company_type": "אחר"
+  },
+  {
+   "title": "(Senior) Business Analyst – User Acquisition and Growth",
+   "company": "R.Y.B. PLACEMENT AGENCY",
+   "source": "JobMaster",
+   "location": "תל אביב יפו",
+   "experience": "3+ years of experience",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Looker",
+   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9911027",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9911027",
+   "alt_key": "rybplacementagency|senior business analyst user acquisition growth|תל אביב",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3069,7 +3149,7 @@
    "key": "https://www.linkedin.com/jobs/view/4461000037",
    "alt_key": "helfy|business analyst|herzliya",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3133,7 +3213,7 @@
    "key": "https://drushim.co.il/job/39110610/d35fb833",
    "alt_key": "נעמימומחיתבהשמתעובדים|דרוש ה אנליסט ית עסקי ת לחברת בטוח|תל אביב",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3149,39 +3229,7 @@
    "key": "https://drushim.co.il/job/38997123/9ac37094",
    "alt_key": "מימוןישיר|אנליסט ית מטה וחווית לקוח|פתח תקווה",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-25",
-   "company_type": "אחר"
-  },
-  {
-   "title": "(Senior) Business Analyst – User Acquisition and Growth",
-   "company": "R.Y.B. PLACEMENT AGENCY",
-   "source": "JobMaster",
-   "location": "תל אביב יפו",
-   "experience": "3+ years of experience",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Looker",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9911027",
-   "date_display": "24/11/2026",
-   "date_iso": "2026-11-24",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9911027",
-   "alt_key": "rybplacementagency|senior business analyst user acquisition growth|תל אביב",
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-25",
-   "company_type": "אחר"
-  },
-  {
-   "title": "ANALYST SOC TIER 2",
-   "company": "עוז תוכנה בע\"מ",
-   "source": "AllJobs",
-   "location": "פתח תקווה",
-   "experience": "ניסיון של 2-3 שנים לפחות בתחום אבטחת",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Python, Querying (שאילתות)",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8909985",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8909985",
-   "alt_key": "עוזתוכנה|analyst soc tier 2|פתח תקווה",
-   "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3201,22 +3249,6 @@
    "company_type": "אחר"
   },
   {
-   "title": "הייטקזון מגייסת אנליסט /ית שישנה את המשחק!",
-   "company": "הייטקזון",
-   "source": "AllJobs",
-   "location": "כפר סבא ו רעננה",
-   "experience": "ניסיון של שנתיים לפחות בתחום אנליזה שימוש",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8891334",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8891334",
-   "alt_key": "הייטקזון|הייטקזון מגייסת אנליסט ית שישנה את המשחק|כפר סבא",
-   "first_seen": "2026-11-10",
-   "last_seen": "2026-11-25",
-   "company_type": "אחר"
-  },
-  {
    "title": "data Analyst",
    "company": "ריקרוטיקס בע\"מ",
    "source": "AllJobs",
@@ -3230,22 +3262,6 @@
    "alt_key": "ריקרוטיקס|data analyst|כפר סבא",
    "first_seen": "2026-11-05",
    "last_seen": "2026-11-24",
-   "company_type": "אחר"
-  },
-  {
-   "title": "מנהל /ת פרויקטים /אנליסט /ית שרשרת אספקה -",
-   "company": "ישומים  לבכירים",
-   "source": "AllJobs",
-   "location": "רמת ישי",
-   "experience": "ניסיון של לפחות 3 שנים בניהול פרויקטי",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8879938",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8879938",
-   "alt_key": "ישומיםלבכירים|מנהל ת פרויקטים אנליסט ית שרשרת אספקה|רמת",
-   "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
    "company_type": "אחר"
   },
   {
@@ -3277,7 +3293,7 @@
    "key": "https://drushim.co.il/job/39162879/4019f4ee",
    "alt_key": "מכבידנט|דרוש ה כלכלן ית לחברת מכבידנט|תל אביב",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3309,7 +3325,7 @@
    "key": "https://drushim.co.il/job/38953841/c355000d",
    "alt_key": "abra|digital business analyst|תל אביב",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3341,7 +3357,7 @@
    "key": "https://drushim.co.il/job/39140041/a627a0de",
    "alt_key": "yesnetכלפתרונות|אנליסט ית פיננסי ת לארגון מוביל בתא 12k|תל אביב",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3357,7 +3373,7 @@
    "key": "https://drushim.co.il/job/39138065/7594b0c4",
    "alt_key": "מימוןישיר|כלכלן ית למחלקה הכלכלית|פתח תקווה",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3389,7 +3405,7 @@
    "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9906881",
    "alt_key": "נסטכנולוגיות|data quality analyst|רעננה",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3405,7 +3421,7 @@
    "key": "https://drushim.co.il/job/39086442/df97d278",
    "alt_key": "עוזתוכנה|analyst soc tier 2|בני ברק",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3469,7 +3485,7 @@
    "key": "https://drushim.co.il/job/39050304/115b6e3a",
    "alt_key": "קבוצתשחר|דרוש ה אנליסט ית נתונים ובקרה תפעולית|אזור",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3549,7 +3565,7 @@
    "key": "https://www.linkedin.com/jobs/view/4488801079",
    "alt_key": "adama|global hr data analytics specialist|israel",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "אחר"
   },
   {
@@ -3601,54 +3617,6 @@
    "company_type": "אחר"
   },
   {
-   "title": "Data Labeling Specialist (Student, Part-Time position)",
-   "company": "Shield",
-   "source": "Secret Tel Aviv",
-   "location": "Tel Aviv/ Ramat Gan",
-   "experience": "",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL, Python",
-   "url": "https://jobs.secrettelaviv.com/job/data-labeling-specialist-student-part-time-position/",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://jobs.secrettelaviv.com/job/data-labeling-specialist-student-part-time-position",
-   "alt_key": "shield|data labeling specialist student part time position|tel aviv",
-   "first_seen": "2026-11-09",
-   "last_seen": "2026-11-22",
-   "company_type": "אחר"
-  },
-  {
-   "title": "לארגון מוביל דרוש /ה אנליסט /ית  Power BI",
-   "company": "קומפאי טכנולוגיות",
-   "source": "Drushim",
-   "location": "חולון, רמת גן, תל אביב, הרצליה, כפר סבא",
-   "experience": "1-2 שנים",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.drushim.co.il/job/38990929/9a95276a/",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://drushim.co.il/job/38990929/9a95276a",
-   "alt_key": "קומפאיטכנולוגיות|לארגון מוביל דרוש ה אנליסט ית power bi|חולון",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-10",
-   "company_type": "אחר"
-  },
-  {
-   "title": "data ANALYST",
-   "company": "Comblack",
-   "source": "AllJobs",
-   "location": "לוד",
-   "experience": "3 שנות ניסיון ב-SQL",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Tableau, Redshift, Querying (שאילתות)",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8865078",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8865078",
-   "alt_key": "comblack|data analyst|לוד",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-11-05",
-   "company_type": "אחר"
-  },
-  {
    "title": "Product Analytics Manager",
    "company": "TytoCare",
    "source": "tytocare.com",
@@ -3665,6 +3633,150 @@
    "company_type": "אחר"
   },
   {
+   "title": "אנליסט /ית פיננסי /ת לארגון מוביל בת\"א, 12K",
+   "company": "חברה בתחום הייטק / חומרה / תוכנה / סייבר",
+   "source": "AllJobs",
+   "location": "מספר מקומות חולון אור יהודה תל אביב יפו רמת גן פתח תקווה",
+   "experience": "",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: Database (מסד/בסיס נתונים)",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8864390",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8864390",
+   "alt_key": "חברהבתחוםהייטקחומרהתוכנהסייבר|אנליסט ית פיננסי ת לארגון מוביל בתא 12k|חולון",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "אנליסט /ית פיננסי /ת לאגף הכספים",
+   "company": "לין ביכלר",
+   "source": "AllJobs",
+   "location": "תל אביב יפו",
+   "experience": "",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Database (מסד/בסיס נתונים), Querying (שאילתות)",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8864210",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8864210",
+   "alt_key": "ליןביכלר|אנליסט ית פיננסי ת לאגף הכספים|תל אביב",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "לחברת פארמה מובילה בתחומה בנס ציונה דרוש /ה מומחה /ית סטטיסטיקה לתהליכי ייצור ואיכות- העסקה עד סוף '",
+   "company": "דנאל משאבי אנוש בע\"מ- קרית גת",
+   "source": "AllJobs",
+   "location": "נס ציונה",
+   "experience": "3-5 שנות ניסיון בסביבת Pharma / Bio",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8831759",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8831759",
+   "alt_key": "דנאלמשאביאנושקריתגת|לחברת פארמה מובילה בתחומה בנס ציונה דרוש ה מומחה ית סטטיסטיקה לתהליכי ייצור ואיכות העסקה עד סוף|נס ציונה",
+   "first_seen": "2026-10-07",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "דרוש /ה אנליסט /ית אקטואריה אלמנטרי לחברת ביטוח",
+   "company": "Jobs.ai",
+   "source": "AllJobs",
+   "location": "חולון",
+   "experience": "",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8765156",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8765156",
+   "alt_key": "jobsai|דרוש ה אנליסט ית אקטואריה אלמנטרי לחברת ביטוח|חולון",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "בוגרים /ות מצטיינים /ות לתפקידי data Analyst",
+   "company": "Experis Academy",
+   "source": "AllJobs",
+   "location": "תל אביב יפו",
+   "experience": "",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8712561",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8712561",
+   "alt_key": "experisacademy|בוגרים ות מצטיינים ות לתפקידי data analyst|תל אביב",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "Data Analyst ללא ניסיון",
+   "company": "Experis Academy",
+   "source": "Drushim",
+   "location": "תל אביב",
+   "experience": "ללא נסיון",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.drushim.co.il/job/38355816/d08a02ec/",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://drushim.co.il/job/38355816/d08a02ec",
+   "alt_key": "experisacademy|data analyst ללא ניסיון|תל אביב",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "דרושים אקדמאים /יות מצטיינים /ות למשרת data & BI Analyst הזדמנות להשתלב בעולם הדאטה!",
+   "company": "Experis Academy",
+   "source": "AllJobs",
+   "location": "תל אביב יפו",
+   "experience": "אין צורך בניסיון",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8285845",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8285845",
+   "alt_key": "experisacademy|דרושים אקדמאים יות מצטיינים ות למשרת data bi analyst הזדמנות להשתלב בעולם הדאטה|תל אביב",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "Junior BI Analyst- בוגרי תואר",
+   "company": "Experis Academy",
+   "source": "Drushim",
+   "location": "תל אביב",
+   "experience": "ללא נסיון",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.drushim.co.il/job/38355778/7b681aa5/",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://drushim.co.il/job/38355778/7b681aa5",
+   "alt_key": "experisacademy|junior bi analyst בוגרי תואר|תל אביב",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "הפכו ל-Data & BI Experts – לא נדרש ניסיון",
+   "company": "Experis Academy",
+   "source": "Drushim",
+   "location": "תל אביב",
+   "experience": "ללא נסיון",
+   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL, Power BI",
+   "url": "https://www.drushim.co.il/job/38355797/0a8f5ddd/",
+   "date_display": "26/11/2026",
+   "date_iso": "2026-11-26",
+   "key": "https://drushim.co.il/job/38355797/0a8f5ddd",
+   "alt_key": "experisacademy|הפכו ל data bi experts לא נדרש ניסיון|תל אביב",
+   "first_seen": "2026-09-26",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
    "title": "כלכלן /ית FP A לחברת מידייה",
    "company": "sigma-hr",
    "source": "AllJobs",
@@ -3677,7 +3789,39 @@
    "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8902856",
    "alt_key": "sigmahr|כלכלן ית fp a לחברת מידייה|תל אביב",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "אנליסט /ית מימון פרויקטים (Project Finance Analyst) לחברה יזמית בתחום האנרגיה",
+   "company": "איילת אלבז",
+   "source": "AllJobs",
+   "location": "מספר מקומות פתח תקווה ראש העין רמת השרון הוד השרון הרצליה",
+   "experience": "1 - 4 שנות ניסיון בתחומי הפיננסים",
+   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Python",
+   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8885304",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8885304",
+   "alt_key": "איילתאלבז|אנליסט ית מימון פרויקטים project finance analyst לחברה יזמית בתחום האנרגיה|פתח תקווה",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-26",
+   "company_type": "חברת השמה / חסוי"
+  },
+  {
+   "title": "Data Analyst",
+   "company": "Gotfriends",
+   "source": "LinkedIn",
+   "location": "Center District, Israel",
+   "experience": "3–5 years",
+   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Python, Database",
+   "url": "https://www.linkedin.com/jobs/view/4484634824",
+   "date_display": "25/11/2026",
+   "date_iso": "2026-11-25",
+   "key": "https://www.linkedin.com/jobs/view/4484634824",
+   "alt_key": "gotfriends|data analyst|center",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3693,7 +3837,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493016802",
    "alt_key": "rsrecruiting|business control processes automation economist analyst|center",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3709,7 +3853,7 @@
    "key": "https://jobs.lever.co/jobgether/fd0dd81c-b9cd-457f-be5c-895467c577f3",
    "alt_key": "jobgether|senior data analyst|israel",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3725,7 +3869,7 @@
    "key": "https://drushim.co.il/job/38610359/93c6cc37",
    "alt_key": "חסוי|senior data analyst העסקה ישירה עי הלקוח|הרצליה",
    "first_seen": "2026-10-05",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3741,7 +3885,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493785363",
    "alt_key": "jobgether|data analyst identification accuracy|israel",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3757,71 +3901,7 @@
    "key": "https://www.linkedin.com/jobs/view/4493713119",
    "alt_key": "jobgether|senior business analyst m a|israel",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "אנליסט /ית מימון פרויקטים (Project Finance Analyst) לחברה יזמית בתחום האנרגיה",
-   "company": "איילת אלבז",
-   "source": "AllJobs",
-   "location": "מספר מקומות פתח תקווה ראש העין רמת השרון הוד השרון הרצליה",
-   "experience": "1 - 4 שנות ניסיון בתחומי הפיננסים",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: Python",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8885304",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8885304",
-   "alt_key": "איילתאלבז|אנליסט ית מימון פרויקטים project finance analyst לחברה יזמית בתחום האנרגיה|פתח תקווה",
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "Data Analyst",
-   "company": "Gotfriends",
-   "source": "LinkedIn",
-   "location": "Center District, Israel",
-   "experience": "3–5 years",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Python, Database",
-   "url": "https://www.linkedin.com/jobs/view/4484634824",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://www.linkedin.com/jobs/view/4484634824",
-   "alt_key": "gotfriends|data analyst|center",
-   "first_seen": "2026-11-04",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "אנליסט /ית פיננסי /ת לארגון מוביל בת\"א, 12K",
-   "company": "חברה בתחום הייטק / חומרה / תוכנה / סייבר",
-   "source": "AllJobs",
-   "location": "מספר מקומות חולון אור יהודה תל אביב יפו רמת גן פתח תקווה",
-   "experience": "",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: Database (מסד/בסיס נתונים)",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8864390",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8864390",
-   "alt_key": "חברהבתחוםהייטקחומרהתוכנהסייבר|אנליסט ית פיננסי ת לארגון מוביל בתא 12k|חולון",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "אנליסט /ית פיננסי /ת לאגף הכספים",
-   "company": "לין ביכלר",
-   "source": "AllJobs",
-   "location": "תל אביב יפו",
-   "experience": "",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Database (מסד/בסיס נתונים), Querying (שאילתות)",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8864210",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8864210",
-   "alt_key": "ליןביכלר|אנליסט ית פיננסי ת לאגף הכספים|תל אביב",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3857,86 +3937,6 @@
    "company_type": "חברת השמה / חסוי"
   },
   {
-   "title": "לחברת פארמה מובילה בתחומה בנס ציונה דרוש /ה מומחה /ית סטטיסטיקה לתהליכי ייצור ואיכות- העסקה עד סוף '",
-   "company": "דנאל משאבי אנוש בע\"מ- קרית גת",
-   "source": "AllJobs",
-   "location": "נס ציונה",
-   "experience": "3-5 שנות ניסיון בסביבת Pharma / Bio",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8831759",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8831759",
-   "alt_key": "דנאלמשאביאנושקריתגת|לחברת פארמה מובילה בתחומה בנס ציונה דרוש ה מומחה ית סטטיסטיקה לתהליכי ייצור ואיכות העסקה עד סוף|נס ציונה",
-   "first_seen": "2026-10-07",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "דרוש /ה אנליסט /ית אקטואריה אלמנטרי לחברת ביטוח",
-   "company": "Jobs.ai",
-   "source": "AllJobs",
-   "location": "חולון",
-   "experience": "",
-   "reason": "וריאציה של כותרת אנליטית; מילות מפתח בתיאור: SQL",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8765156",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8765156",
-   "alt_key": "jobsai|דרוש ה אנליסט ית אקטואריה אלמנטרי לחברת ביטוח|חולון",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "בוגרים /ות מצטיינים /ות לתפקידי data Analyst",
-   "company": "Experis Academy",
-   "source": "AllJobs",
-   "location": "תל אביב יפו",
-   "experience": "",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8712561",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8712561",
-   "alt_key": "experisacademy|בוגרים ות מצטיינים ות לתפקידי data analyst|תל אביב",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "Data Analyst ללא ניסיון",
-   "company": "Experis Academy",
-   "source": "Drushim",
-   "location": "תל אביב",
-   "experience": "ללא נסיון",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.drushim.co.il/job/38355816/d08a02ec/",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://drushim.co.il/job/38355816/d08a02ec",
-   "alt_key": "experisacademy|data analyst ללא ניסיון|תל אביב",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "דרושים אקדמאים /יות מצטיינים /ות למשרת data & BI Analyst הזדמנות להשתלב בעולם הדאטה!",
-   "company": "Experis Academy",
-   "source": "AllJobs",
-   "location": "תל אביב יפו",
-   "experience": "אין צורך בניסיון",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8285845",
-   "date_display": "23/11/2026",
-   "date_iso": "2026-11-23",
-   "key": "https://alljobs.co.il/Search/UploadSingle.aspx?JobID=8285845",
-   "alt_key": "experisacademy|דרושים אקדמאים יות מצטיינים ות למשרת data bi analyst הזדמנות להשתלב בעולם הדאטה|תל אביב",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
    "title": "לקבוצת אדלר חומסקי דרוש.ה אנליסט.ית מנוסה!",
    "company": "- חסוי -",
    "source": "Drushim",
@@ -3949,7 +3949,7 @@
    "key": "https://drushim.co.il/job/38971910/56025b6d",
    "alt_key": "חסוי|לקבוצת אדלר חומסקי דרוש ה אנליסט ית מנוסה|תל אביב",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3965,7 +3965,7 @@
    "key": "https://drushim.co.il/job/38322243/96122917",
    "alt_key": "experisacademy|junior data analyst לאקדמאים עם ראש אנליטי|תל אביב",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -3981,7 +3981,7 @@
    "key": "https://drushim.co.il/job/38896138/b488129b",
    "alt_key": "סיאלגיוסוהשמה|אנליסט ית פיננסי ת לאגף הכספים בחברה מובילה בתא|תל אביב",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4013,7 +4013,7 @@
    "key": "https://drushim.co.il/job/38805185/5384c952",
    "alt_key": "ליןביכלרראשי|אנליסט ית פיננסי ת לאגף הכספים|תל אביב",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4317,7 +4317,7 @@
    "key": "https://drushim.co.il/job/39019866/8c3577b8",
    "alt_key": "חסוי|clinical business analyst|נתניה",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4369,22 +4369,6 @@
    "company_type": "חברת השמה / חסוי"
   },
   {
-   "title": "Junior BI Analyst- בוגרי תואר",
-   "company": "Experis Academy",
-   "source": "Drushim",
-   "location": "תל אביב",
-   "experience": "ללא נסיון",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.drushim.co.il/job/38355778/7b681aa5/",
-   "date_display": "07/11/2026",
-   "date_iso": "2026-11-07",
-   "key": "https://drushim.co.il/job/38355778/7b681aa5",
-   "alt_key": "experisacademy|junior bi analyst בוגרי תואר|תל אביב",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
    "title": "אקדמאים מצטיינים לתפקיד Data & BI Analyst",
    "company": "Experis Academy",
    "source": "Drushim",
@@ -4398,38 +4382,6 @@
    "alt_key": "experisacademy|אקדמאים מצטיינים לתפקיד data bi analyst|תל אביב",
    "first_seen": "2026-09-26",
    "last_seen": "2026-11-09",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "הפכו ל-Data & BI Experts – לא נדרש ניסיון",
-   "company": "Experis Academy",
-   "source": "Drushim",
-   "location": "תל אביב",
-   "experience": "ללא נסיון",
-   "reason": "כותרת לא סטנדרטית - מהות התפקיד Data Analytics; מילות מפתח בתיאור: SQL, Power BI",
-   "url": "https://www.drushim.co.il/job/38355797/0a8f5ddd/",
-   "date_display": "07/11/2026",
-   "date_iso": "2026-11-07",
-   "key": "https://drushim.co.il/job/38355797/0a8f5ddd",
-   "alt_key": "experisacademy|הפכו ל data bi experts לא נדרש ניסיון|תל אביב",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
-   "company_type": "חברת השמה / חסוי"
-  },
-  {
-   "title": "אנליסט/ית דאטה",
-   "company": "YifaTalent – פתרונות גיוס מתקדמים",
-   "source": "JobMaster",
-   "location": "הרצליה",
-   "experience": "ניסיון של שנתיים לפחות כאנליסט/ית בתחום ה",
-   "reason": "כותרת תואמת; מילות מפתח בתיאור: Power BI",
-   "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9869275",
-   "date_display": "05/11/2026",
-   "date_iso": "2026-11-05",
-   "key": "https://jobmaster.co.il/jobs/checknum.asp?key=9869275",
-   "alt_key": "yifatalentפתרונותגיוסמתקדמים|אנליסט ית דאטה|הרצליה",
-   "first_seen": "2026-09-26",
-   "last_seen": "2026-11-17",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4493,7 +4445,7 @@
    "key": "https://sqlink.com/career/bidbabig-data/data-analyst",
    "alt_key": "לאצויןבמקור|data analyst|לא ידוע דורש אימות",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4509,7 +4461,7 @@
    "key": "https://sqlink.com/career/bidbabig-data/product-analyst",
    "alt_key": "לאצויןבמקור|product analyst|לא ידוע דורש אימות",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4557,7 +4509,7 @@
    "key": "https://gotfriends.co.il/jobslobby/bibig_data/data-analyst",
    "alt_key": "לאצויןבמקור|דאטה אנליסט|ישראל",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   },
   {
@@ -4573,19 +4525,12 @@
    "key": "https://gotfriends.co.il/jobslobby/bibig_data/product-analyst",
    "alt_key": "לאצויןבמקור|product analyst|ישראל",
    "first_seen": "2026-09-26",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "company_type": "חברת השמה / חסוי"
   }
  ],
- "last_sent_date": "2026-11-25",
+ "last_sent_date": "2026-11-26",
  "history": [
-  {
-   "date": "2026-09-27",
-   "sent_at": "10:00:02",
-   "new": 3,
-   "cumulative": 199,
-   "links": 353
-  },
   {
    "date": "2026-09-28",
    "sent_at": "10:00:03",
@@ -4997,6 +4942,13 @@
    "sent_at": "10:00:02",
    "new": 18,
    "cumulative": 286,
+   "links": 659
+  },
+  {
+   "date": "2026-11-26",
+   "sent_at": "10:00:04",
+   "new": 9,
+   "cumulative": 283,
    "links": 659
   }
  ]
